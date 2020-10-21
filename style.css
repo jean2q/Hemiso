@@ -131,3 +131,14 @@ main {
     left: 667px;
     bottom: 0px;
 }
+
+.logo_facul {
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+}
+
+.logo_facul img{
+    height: 153px;
+    width: 172px;
+}
