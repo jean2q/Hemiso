@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Hemiso - Uniguaçu</title>
+        
+        <!--<link rel="stylesheet" href="style2.css">-->
+        
+        <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+        <link
+        href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+        rel="stylesheet">
+        
+
+
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <a href="/">Hemiso</a>
+        </div>
+
+        <div>
+            <a href="/dadosPaciente.html">voltar</a>
+        </div>
+
+    </header>
+
+    <form id="laudo">
+        <h1>Série Vermelha</h1>
+
+        <div>
+
+            <label for="ht">Hematócrito</label>
+            <input type="number" id="ht" name="ht" placeholder="%">
+
+            <label for="hem_cont">Contagem de hemácias </label>
+            <input type="number" id="hem_cont" name="hem_cont" placeholder="x10⁶">
+            
+            <label for="hb">Hemoglobina</label>
+            <input type="number" id="hb" name="hb" placeholder="g/dL">
+
+            <label for="hem_outros">Outros Achados</label>
+            <input type="text" id="hem_outros" name="hem_outros">
+
+            <label for="hem_metodo">Metodologias</label>
+            <input type="text" id="hem_metodo" name="hem_metodo">
+
+            <label for="hem_obs">Observações</label>
+            <input type="text" id="hem_obs" name="hem_obs">
+
+        </div>
+
+        <h1>Série Branca</h1>
+        <div>
+
+            <label for="leuc_cont">Contagem de Leucócitos</label>
+            <input type="number" id="leuc_cont" name="leuc_cont">
+
+            <label for="neut">Neutrófilos</label>
+            <input type="number" id="neut" name="neut">
+
+            <label for="eosi">Eosinófilos</label>
+            <input type="number" id="eosi" name="eosi">
+
+            <label for="baso">Basófilos</label>
+            <input type="number" id="baso" name="baso">
+
+            <label for="mono">Monócitos</label>
+            <input type="number" id="mono" name="mono">
+
+            <label for="linfo">Linfócitos Típicos</label>
+            <input type="number" id="linfo" name="linfo">
+
+            <label for="leuc_outros">Outros Achados</label>
+            <input type="text" id="leuc_outros" name="leuc_outros">
+
+            <label for="leuc_metodo">Metodologias</label>
+            <input type="text" id="leuc_metodo" name="leuc_metodo">
+
+            <label for="leuc_obs">Observações</label>
+            <input type="text" id="leuc_obs" name="leuc_obs">
+
+        </div>
+
+        <div>
+            <h1>Plaquetograma</h1>
+            <label for="plac_cont">Contagem de Plaquetas</label>
+            <input type="number" id="plac_cont" name="plac_cont">
+
+            <label for="plac_outros">Outros Achados</label>
+            <input type="text" id="plac_outros" name="plac_outros">
+
+            <label for="plac_metodo">Metodologias</label>
+            <input type="text" id="plac_metodo" name="plac_metodo">
+
+            <label for="plac_obs">Observações</label>
+            <input type="text" id="plac_obs" name="plac_obs">
+
+            <input type="submit" value="Gerar Laudo">
+        </div>
+
+    </form>
+
+    <br>
+    <div id="texto"></div>
+
+</body>
+<script src="dadosHemograma.js"></script>
+</html>
