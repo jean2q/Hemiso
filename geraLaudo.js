@@ -36,6 +36,8 @@
     document.getElementById('dataCol').innerHTML = dataColFormat
     document.getElementById('dataLib').innerHTML = dataLibFormat
 
+    document.getElementById('altura').innerHTML = dados.altura/100
+
     // Atribui o sexo conforme status de dados.sexo, se é falso é masculino, se verdadeiro feminino
 
     if (dados.sexo == 'false'){
@@ -126,28 +128,28 @@
 
     if (dados.hb < valorRef.refHb.min) //Verifica se há anemia
     {
-        anemia.status = "anemia";
+        anemia.status = " ↓ anemia";
 
         if (dados.VCM < valorRef.refVCM.min) //Verifica a classificação de acordo com o tamanho das celulas
         {
-            anemia.tamanho = "microcítica"
+            anemia.tamanho = " ↓ microcítica"
         }
         else if (dados.VCM > valorRef.refVCM.max)
         {
-            anemia.tamanho = "macrocítica"
+            anemia.tamanho = " ↑ macrocítica"
         }
         else if (dados.VCM > valorRef.refVCM.min && dados.VCM < valorRef.refVCM.max)
         {
-            anemia.tamanho = "normocítica"
+            anemia.tamanho = " normocítica "
         }
 
         if (dados.HCM < valorRef.refHCM.min) //Verifica a classificação de acordo com a cor das celulas
         {
-            anemia.cor = "hipocrômica"
+            anemia.cor = " ↓ hipocrômica"
         }
         else if (dados.HCM > valorRef.refHCM.min && dados.HCM < valorRef.refHCM.max)
         {
-            anemia.cor = "normocrômica"
+            anemia.cor = " normocrômica "
         }
 
     }
@@ -165,38 +167,65 @@
     }
 
     if (dados.leuc > valorRef.refLeuc.max){
-        serieBranca.leuc = "leucocitose"
+        serieBranca.leuc = "↑ leucocitose  "
     }
     else if (dados.leuc < valorRef.refLeuc.min){
-        serieBranca.leuc = "leucopenia"
+        serieBranca.leuc = "↓ leucopenia  "
     }
 
     if (dados.linf > valorRef.refLinf.max){
-        serieBranca.linf = "linfocitose"
+        serieBranca.linf = "↑ linfocitose "
     }
     else if (dados.linf < valorRef.refLinf.min){
-        serieBranca.linf = "linfopenia"
+        serieBranca.linf = "↓ linfopenia  "
     }
 
     if (dados.mono > valorRef.refMono.max){
-        serieBranca.mono = "monocitose"
+        serieBranca.mono = "↑ monocitose "
     }
     else if (dados.mono < valorRef.refMono.min){
-        serieBranca.mono = "monocitopenia"
+        serieBranca.mono = "↓ monocitopenia "
     }
     
     if (dados.eosi > valorRef.refEosi.max){
-        serieBranca.eosi = "eosinofilia"
+        serieBranca.eosi = " ↑ eosinofilia "
     }
     else if (dados.eosi < valorRef.refEosi.min){
-        serieBranca.eosi = "eosinopenia"
+        serieBranca.eosi = " ↓ eosinopenia "
     }
     
     if (dados.baso > valorRef.refBaso.max){
-        serieBranca.baso = "basofilia"
+        serieBranca.baso = " ↑ basofilia"
     }
     else if (dados.baso < valorRef.refBaso.min){
-        serieBranca.baso = "basopenia"
+        serieBranca.baso = " ↓ basopenia"
     }
     
     console.log(serieBranca)
+
+    //Preenche flags plaquetograma
+    var plaquetograma = null
+
+    if (dados.plac_cont > valorRef.refPlaq.max){
+        plaquetograma = " ↑ trombocitose "
+    }
+    else if (dados.plac_cont < valorRef.refPlaq.min){
+        plaquetograma = " ↓ trombocitopenia "
+    }
+
+    if (plaquetograma != null){
+        document.getElementById('plac_obs').innerHTML = plaquetograma
+    }
+
+    function preencherFlags(objeto, campo){
+        let valuesObj = Object.values(objeto)
+        console.log(valuesObj)
+        for (i in valuesObj){
+            if (valuesObj[i] != null){
+                document.getElementById(campo).innerText += valuesObj[i]
+            }
+        }
+    }
+
+    preencherFlags(anemia, 'hem_obs')
+    preencherFlags(serieBranca, 'leuc_obs')

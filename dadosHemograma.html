@@ -34,13 +34,13 @@
         <div>
 
             <label for="ht">Hematócrito</label>
-            <input type="number" id="ht" name="ht" placeholder="%">
+            <input type="number" id="ht" name="ht" placeholder="%" step="0.01">
 
             <label for="hem_cont">Contagem de hemácias </label>
-            <input type="number" id="hem_cont" name="hem_cont" placeholder="x10¹²/L">
+            <input type="number" id="hem_cont" name="hem_cont" placeholder="x10¹²/L" step="0.01">
 
             <label for="hb">Hemoglobina</label>
-            <input type="number" id="hb" name="hb" placeholder="g/dL">
+            <input type="number" id="hb" name="hb" placeholder="g/dL" step="0.01">
 
             <label for="hem_outros">Outros Achados</label>
             <input type="text" id="hem_outros" name="hem_outros">
@@ -54,22 +54,22 @@
         <div>
 
             <label for="leuc">Contagem de Leucócitos</label>
-            <input type="number" id="leuc" name="leuc">
+            <input type="number" id="leuc" name="leuc" step="0.01">
 
             <label for="neut">Neutrófilos</label>
-            <input type="number" id="neut" name="neut">
+            <input type="number" id="neut" name="neut" step="0.01">
 
             <label for="eosi">Eosinófilos</label>
-            <input type="number" id="eosi" name="eosi">
+            <input type="number" id="eosi" name="eosi" step="0.01">
 
             <label for="baso">Basófilos</label>
-            <input type="number" id="baso" name="baso">
+            <input type="number" id="baso" name="baso" step="0.01">
 
             <label for="mono">Monócitos</label>
-            <input type="number" id="mono" name="mono">
+            <input type="number" id="mono" name="mono" step="0.01">
 
             <label for="linf">Linfócitos Típicos</label>
-            <input type="number" id="linf" name="linf">
+            <input type="number" id="linf" name="linf" step="0.01">
 
             <label for="leuc_outros">Outros Achados</label>
             <input type="text" id="leuc_outros" name="leuc_outros">
@@ -77,24 +77,18 @@
             <label for="leuc_metodo">Metodologias</label>
             <input type="text" id="leuc_metodo" name="leuc_metodo">
 
-            <label for="leuc_obs">Observações</label>
-            <input type="text" id="leuc_obs" name="leuc_obs">
-
         </div>
 
         <div>
             <h1>Plaquetograma</h1>
             <label for="plac_cont">Contagem de Plaquetas</label>
-            <input type="number" id="plac_cont" name="plac_cont">
+            <input type="number" id="plac_cont" name="plac_cont" step="0.01">
 
             <label for="plac_outros">Outros Achados</label>
             <input type="text" id="plac_outros" name="plac_outros">
 
             <label for="plac_metodo">Metodologias</label>
             <input type="text" id="plac_metodo" name="plac_metodo">
-
-            <label for="plac_obs">Observações</label>
-            <input type="text" id="plac_obs" name="plac_obs">
 
             <input type="submit" value="Gerar Laudo">
         </div>
