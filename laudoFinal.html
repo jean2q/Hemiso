@@ -1,23 +1,115 @@
 <!DOCTYPE html>
-<html lang="pt-be">
+<html lang="pt-br">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Laudo</title>
+
+    <link rel="stylesheet" href="laudoFinalStyle.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;1,300;1,400&display=swap"
+        rel="stylesheet">
+
 </head>
 
 <body>
     <header>
         <h1>UNIGUAÇU - HEMOGRAMA</h1>
+        <div class="datas">
+            <h3>Data Coleta: <span id="dataCol"></span></h3>
+            <h3>Data Liberação: <span id="dataLib"></span></h3>
+        </div>
     </header>
-    <h3>Data Coleta: <span id="dataColeta">01012003</span></h3>
-    <h3>Data Coleta: <span id="dataLiberação">01022003</span>
-        <h2>Dados do Paciente</h2>
-        <h3>Nome: <span id="nome">Jean Lucas Pereira de Lima</span></h3>
-        <h3>Idade: <span id="idade">23</span></h3>
-        <h3>Raça/Etnia: <span id="idade">Pardo</span></h3>
-        <h3>Peso: <span id="peso">70kgs</span></h3>
-        <h3>Altura: <span id="altura">180cm</span></h3>
-        <h3>IMC: <span id="imc"> X </span><span id="IMCteste">regular</span></h3>
+    <h2>Dados do Paciente</h2>
+    <div class="dadosPaciente">
+        <h4>Nome: <span id="nome"></span></h4>
+        <h4>Idade: <span id="idade"></span></h4>
+        <h4>Raça/Etnia: <span id="etnia"></span></h4>
+        <h4>Sexo: <span id="sexo"></span></h4>
+        <h4>Peso: <span id="peso"></span>kg</h4>
+        <h4>Altura: <span id="altura"></span>m</h4>
+        <h4>IMC: <span id="IMC"></span><span id="IMCcoment"></span></h4>
+    </div>
+
+    <h2>Situação Clínica</h2>
+    <div class="dadosPaciente">
+        <h4>Uso de Fármacos: <span id="farmacos"></span></h4>
+        <h4>Jejum: <span id="jejum"></span></h4>
+        <h4>Gestante: <span id="gestante"></span></h4>
+        <h4>Ritmo Circadiano: <span id="ritmo"></span></h4>
+        <h4>Efeitos exercícios físicos/Altitude: <span id="altitude"></span></h4>
+        <h4>Pressão Arterial: <span id="pA"></span></h4>
+    </div>
+
+    <h2>Doenças Crônicas Não Transmissíveis</h2>
+    <div class="dadosPaciente">
+        <h4>Diabetes: <span id="diabetes"></span></h4>
+        <h4>Cânceres: <span id="canceres"></span></h4>
+        <h4>Hipertensão Arterial: <span id="hpa"></span></h4>
+        <h4>Doenças Respiratórias: <span id="dnctResp"></span></h4>
+        <h4>Outras doenças e observações: <span id="dcntOutros"></span></h4>
+    </div>
+
+    <h2>Estilo de Vida</h2>
+    <div class="dadosPaciente">
+        <h4>Tabagismo: <span id="tabagismo"></span></h4>
+        <h4>Etilismo: <span id="etilismo"></span></h4>
+        <h4>Sedentarismo: <span id="sedentarismo"></span></h4>
+        <h4>Deficiência Nutricional: <span id="def_Nutricional"></span></h4>
+        <h4>Consumo de drogas: <span id="drogas"></span></h4>
+        <h4>Observações: <span id="estiloOBS"></span></h4>
+    </div>
+
+    <div class="hemograma">
+        <div class="serieVermelha">
+            <h2>Série Vermelha</h2>
+            <h4>Hematócrito: <span id="ht"></span>%</h4>
+            <h4>Contagem de hemácias: <span id="hem_cont"></span>x10¹²/L</h4>
+            <h4>Hemoglobina: <span id="hb"></span>g/dL</h4>
+            <h4>VCM: <span id="VCM"></span>fL</h4>
+            <h4>HCM: <span id="HCM"></span>pcg</h4>
+            <h4>CHCM: <span id="CHCM"></span></h4>
+            <h4>Outros achados: <span id="hem_outros"></span></h4>
+            <h4>Metodologia: <span id="hem_metodo"></span></h4>
+        </div>
+        <div class="valorRef">
+            <h2>Valores de Referência</h2>
+            <h4>Hematócrito: <span id="refHt.min"></span> a <span id="refHt.max"></span>%</h4>
+            <h4>Contagem de hemácias: <span id="refHemacias.min"> </span> a <span id="refHemacias.max"></span>x10¹²/L
+            </h4>
+            <h4>Hemoglobina: <span id="refHb.min"> a </span><span id="refHb.max"></span>g/dL</h4>
+            <h4>VCM: <span id="refVCM.min"></span> a <span id="refVCM.max"></span>fL</h4>
+            <h4>HCM: <span id="refHCM.min"></span> a <span id="refHCM.max"></span>pcg</h4>
+            <h4>CHCM: <span id="refCHCM.min"></span> a <span id="refCHCM.max"></span>%</h4>
+        </div>
+        <div class="serieVermelha">
+            <h2>Série Branca</h2>
+            <h4>Leucócitos: <span id="leuc"></span>milhões/mm³</h4>
+            <h4>Neutrófilos: <span id="neut"></span>%L</h4>
+            <h4>Eosinófilos: <span id="eosi"></span>%</h4>
+            <h4>Basófilos: <span id="baso"></span>%</h4>
+            <h4>Monócitos: <span id="mono"></span>%</h4>
+            <h4>Linfócitos: <span id="linf"></span>%</h4>
+            <h4>Outros achados: <span id="leuc_outros"></span></h4>
+            <h4>Metodologia: <span id="leuc_metodo"></span></h4>
+            <h4>Observações <span id="leu_outros"></span></h4>
+        </div>
+        <div class="valorRef">
+            <h2>Valores de Referência</h2>
+            <h4>Leucócitos: <span id="refLeuc.min"></span> a <span id="refLeuc.max"></span>milhões/mm³</h4>
+            <h4>Neutrófilos: <span id="refNeut.min"></span> a <span id="refNeut.max"></span>%</h4>
+            <h4>Eosinófilos: <span id="refEosi.min"></span> a <span id="refEosi.max"></span>%</h4>
+            <h4>Basófilos: <span id="refBaso.min"></span> a <span id="refBaso.max"></span>%</h4>
+            <h4>Monócitos: <span id="refMono.min"></span> a <span id="refMono.max"></span>%</h4>
+            <h4>Linfócitos: <span id="refLinf.min"></span> a <span id="refLinf.max"></span>%</h4>
+        </div>
+
+    </div>
+
+
+    <script src="geraLaudo.js"></script>
+    <script src="IMC.js"></script>
+
 </html>

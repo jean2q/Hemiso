@@ -1,5 +1,6 @@
 window.onload = function () {
 	var form = document.getElementById('formPaciente');
+	var dadosPaciente = new Object()
 
 	form.addEventListener('submit', function (e) {
 		////Salva Valores Desse form no localstorage 
@@ -12,13 +13,6 @@ window.onload = function () {
 				localStorage.setItem(form[atual].name, form[atual].checked)
 			}
 		}
-
-
-
-		for (var a in localStorage) {
-			console.log(a, ' = ', localStorage[a]);
-		 }
-		 
 
 		// impede o envio do form
 
