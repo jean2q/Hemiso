@@ -1,0 +1,59 @@
+header{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+body{
+    background-color: #F0F0F5;
+}
+
+.logo a {
+    color: #432344;
+    text-decoration: none;
+    font-size: 64px;
+    font-weight: bold;
+    font-family: 'ubuntu', sans-serif;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+a {
+    color:inherit;
+    text-decoration:none;
+}
+.voltar{
+    display:flex;
+    font-family: 'Roboto';
+    font-weight: bold;
+    color: #432344;
+}
+.voltar img{
+    max-height: 30px;
+    padding:0px;
+    margin-top: -3px;
+    margin-right: 10px;
+}
+
+#containerFundo{
+    background-color:white;
+    margin:auto;
+    width: 65%;
+    height: 1350px;
+    border-radius:10px;
+    display:flex;
+    flex-wrap:wrap;
+}
+
+.datas{
+    display:flex;
+    flex-direction:column;
+}
+.datas input{
+    height:25px;
+    width:110px;
+    border-radius:10px;
+}
+
+.flex{
+    display:flex;
+    justify-content:space-between;
+}

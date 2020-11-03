@@ -6,13 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hemiso - Uniguaçu</title>
 
-    <!-- <link rel="stylesheet" href="style2.css"> -->
+    <link rel="stylesheet" href="./styles/styleDadosPaciente.css">
 
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <link
         href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
         rel="stylesheet">
- 
+
 </head>
 
 <body>
@@ -21,7 +21,8 @@
             <a href="/">Hemiso</a>
         </div>
 
-        <div>
+        <div class="voltar">
+            <img src="./images/setaVoltar.png">
             <a href="/">Voltar para o início</a>
         </div>
 
@@ -29,114 +30,118 @@
     <script src="dadosPaciente.js"></script>
 
     <form id="formPaciente">
-        <h1>Dados do Paciente</h1>
+        <div id="containerFundo">
+            <div class="dadosPaciente">
+                <span class="flex">
+                <h1>Dados do Paciente</h1>
+                <div class="datas">
+                    <label for="dataCol">Data da Coleta</label>
+                    <input type="date" id="dataCol" name="dataCol">
 
-        <div>
-            <label for="dataCol">Data da Coleta</label>
-            <input type="date" id="dataCol" name="dataCol">
-
-            <label for="dataLib">Data da Liberacao</label>
-            <input type="date" id="dataLib" name="dataLib">
-
-            <label for="nome">Nome</label>
-            <input type="text" id="nome" name="nome">
-
-            <label for="idade">Idade</label>
-            <input type="number" id="idade" name="idade">
-
-            <label for="etnia">Raça/Etnia</label>
-            <select name="etnia" id="etnia">
-                <option>Selecione uma opção</option>
-                <option value="Preto">Preto</option>
-                <option value="Pardo">Pardo</option>
-                <option value="Amarelo">Amarelo</option>
-                <option value="Branco">Branco</option>
-                <option value="Indígena">Indígena</option>
-            </select>
-
-
-            <span>
-                Sexo
-                <input type="radio" id="masc" name="sexo" value="masc">
-                <label for="masc">Masculino</label>
-
-                <input type="radio" id="fem" name="sexo" value="fem">
-                <label for="fem">Feminino</label>
+                    <label for="dataLib">Data da Liberação</label>
+                    <input type="date" id="dataLib" name="dataLib">
+                </div>
             </span>
-            <label for="peso">Peso (kg)</label>
-            <input type="number" id="peso" name="peso" placeholder="kgs">
+                <label for="nome">Nome</label>
+                <input type="text" id="nome" name="nome">
 
-            <label for="altura">Altura (cm)</label>
-            <input type="number" id="altura" name="altura" placeholder="cm">
+                <label for="idade">Idade</label>
+                <input type="number" id="idade" name="idade">
 
-        </div>
+                <label for="etnia">Raça/Etnia</label>
+                <select name="etnia" id="etnia">
+                    <option>Selecione uma opção</option>
+                    <option value="Preto">Preto</option>
+                    <option value="Pardo">Pardo</option>
+                    <option value="Amarelo">Amarelo</option>
+                    <option value="Branco">Branco</option>
+                    <option value="Indígena">Indígena</option>
+                </select>
 
-        <h1>Situação Clínica</h1>
-        <div>
-            <label for="farmacos">Uso de Fármacos</label>
-            <input type="text" id="farmacos" name="farmacos">
 
-            <input type="checkbox" id="jejum" name="jejum">
-            <label for="jejum">Jejum</label>
+                <span>
+                    Sexo
+                    <input type="radio" id="masc" name="sexo" value="masc">
+                    <label for="masc">Masculino</label>
 
-            <input type="checkbox" id="gestante" name="gestante">
-            <label for="gestante">Gestante</label>
+                    <input type="radio" id="fem" name="sexo" value="fem">
+                    <label for="fem">Feminino</label>
+                </span>
+                <label for="peso">Peso (kg)</label>
+                <input type="number" id="peso" name="peso" placeholder="kgs">
 
-            <label for="ritmo">Ritmo Circadiano</label>
-            <input type="text" id="ritmo" name="ritmo">
+                <label for="altura">Altura (cm)</label>
+                <input type="number" id="altura" name="altura" placeholder="cm">
 
-            <label for="altitude">Efeitos exercícios físicos/Altitude</label>
-            <input type="text" id="altitude" name="altitude">
+            </div>
 
-            <label for="pA">Pressão Arterial</label>
-            <input type="text" id="pA" name="pA">
+            <h1>Situação Clínica</h1>
+            <div>
+                <label for="farmacos">Uso de Fármacos</label>
+                <input type="text" id="farmacos" name="farmacos">
 
-        </div>
+                <input type="checkbox" id="jejum" name="jejum">
+                <label for="jejum">Jejum</label>
 
-        <div>
-            <h1> Doenças Crônicas Não Transmissíveis</h1>
-            <input type="checkbox" id="diabetes" name="diabetes">
-            <label for="diabetes">Diabetes</label>
+                <input type="checkbox" id="gestante" name="gestante">
+                <label for="gestante">Gestante</label>
 
-            <input type="checkbox" id="hpa" name="hpa">
-            <label for="hpa">Hipertensão Arterial</label>
+                <label for="ritmo">Ritmo Circadiano</label>
+                <input type="text" id="ritmo" name="ritmo">
 
-            <input type="checkbox" id="canceres" name="canceres">
-            <label for="canceres">Cânceres</label>
+                <label for="altitude">Efeitos exercícios físicos/Altitude</label>
+                <input type="text" id="altitude" name="altitude">
 
-            <input type="checkbox" id="dnctResp" name="dnctResp">
-            <label for="dnctResp">Deficiência Nutricional</label>
+                <label for="pA">Pressão Arterial</label>
+                <input type="text" id="pA" name="pA">
 
-            <label for="dcntOutros">Outras doenças e observações</label>
-            <textarea id="dcntOutros" name="dcntOutros" rows="4">
+            </div>
+
+            <div>
+                <h1> Doenças Crônicas Não Transmissíveis</h1>
+                <input type="checkbox" id="diabetes" name="diabetes">
+                <label for="diabetes">Diabetes</label>
+
+                <input type="checkbox" id="hpa" name="hpa">
+                <label for="hpa">Hipertensão Arterial</label>
+
+                <input type="checkbox" id="canceres" name="canceres">
+                <label for="canceres">Cânceres</label>
+
+                <input type="checkbox" id="dnctResp" name="dnctResp">
+                <label for="dnctResp">Deficiência Nutricional</label>
+
+                <label for="dcntOutros">Outras doenças e observações</label>
+                <textarea id="dcntOutros" name="dcntOutros" rows="4">
             </textarea>
-        </div>
-        <div>
-            <h1>Estilo de vida</h1>
-            <input type="checkbox" id="tabagismo" name="tabagismo">
-            <label for="tabagismo">Tabagismo</label>
+            </div>
+            <div>
+                <h1>Estilo de vida</h1>
+                <input type="checkbox" id="tabagismo" name="tabagismo">
+                <label for="tabagismo">Tabagismo</label>
 
-            <input type="checkbox" id="sedentarismo" name="sedentarismo">
-            <label for="sedentarismo">Sedentarismo</label>
+                <input type="checkbox" id="sedentarismo" name="sedentarismo">
+                <label for="sedentarismo">Sedentarismo</label>
 
-            <input type="checkbox" id="etilismo" name="etilismo">
-            <label for="etilismo">Etilismo</label>
+                <input type="checkbox" id="etilismo" name="etilismo">
+                <label for="etilismo">Etilismo</label>
 
-            <input type="checkbox" id="def_Nutricional" name="def_Nutricional">
-            <label for="def_Nutricional">Deficiência Nutricional</label>
+                <input type="checkbox" id="def_Nutricional" name="def_Nutricional">
+                <label for="def_Nutricional">Deficiência Nutricional</label>
 
-            <textarea id="drogas" name="drogas" rows="4">
+                <textarea id="drogas" name="drogas" rows="4">
             </textarea>
-            <label for="drogas">Abuso de drogas</label>
+                <label for="drogas">Abuso de drogas</label>
 
-            <textarea id="estiloOBS" name="estiloOBS" rows="4">
+                <textarea id="estiloOBS" name="estiloOBS" rows="4">
             </textarea>
-            <label for="estiloOBS">Observações</label>
-            <span>
-                <button type="submit">Próximo</a>
-            </span>
-        </div>
+                <label for="estiloOBS">Observações</label>
+                <span>
+                    <button type="submit">Próximo</a>
+                </span>
+            </div>
     </form>
+    </div>
 </body>
 
 </html>

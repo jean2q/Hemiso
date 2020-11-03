@@ -1,7 +1,13 @@
 * {
     font-weight:normal;
+    border: 0px;
+    
 }
 
+a {
+    color:inherit;
+    text-decoration:none;
+}
 h2 {
     font-family: 'Roboto';
     font-weight:  bold; 
@@ -23,8 +29,8 @@ h1{
 
 .dadosPaciente {
     display: flex;
-    justify-content: space-around;
-    
+    justify-content: space-between;
+    align-content: flex-start;
     flex-wrap: wrap;
     font-family: 'Times New Roman';
     font-weight: normal;
