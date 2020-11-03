@@ -5,6 +5,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hemiso - Contador</title>
+
+    <link rel="stylesheet" href="styles/counter.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+        rel="stylesheet">
+
+    
 </head>
 
 <body>
@@ -12,50 +20,58 @@
         <div class="logo">
             <a href="/">Hemiso</a>
         </div>
+        <h1>Diferencial Leucocitário</h1>
     </header>
 
-    <h1>Diferencial Leucocitário</h1>
 
     <div class="container">
         <div class="buttons">
             <div class="buttonNeut">
                 <h2>Q ↑ A ↓</h2>
                 <img src="images/counter/neut.png">
-                <h3>Neutrófilos</h3>
-                <h4>0</h4>
+                <h3>Neutrófilos</h3><button class="addSub" id="incrementNeut">↑</button><button class="addSub" id="decrementNeut">↓</button>
+                <h4><span id="neutPorcento">0</span><span class="porcento">%</span></h4>
+                <h4 id="neut">0</h4>
+
             </div>
             <div class="buttonLinf">
                 <h2>W ↑ S ↓</h2>
                 <img src="images/counter/linf.png">
-                <h3>Linfócitos</h3>
-                <h4>0</h4>
+                <h3>Linfócitos</h3><button class="addSub" id="incrementLinf">↑</button><button class="addSub" id="decrementLinf">↓</button>
+                <h4><span id="linfPorcento">0</span><span class="porcento">%</span></h4>
+                <h4 id="linf">0</h4>
             </div>
             <div class="buttonEosi">
                 <h2>E ↑ D ↓</h2>
                 <img src="images/counter/eosi.png">
-                <h3>Eosinófilos</h3>
-                <h4>0</h4>
+                <h3>Eosinófilos</h3><button class="addSub" id="incrementEosi">↑</button><button class="addSub" id="decrementEosi">↓</button>
+                <h4><span id="eosiPorcento">0</span><span class="porcento">%</span></h4>
+                <h4 id="eosi">0</h4>
             </div>
             <div class="buttonBaso">
                 <h2>R ↑ F ↓</h2>
                 <img src="images/counter/baso.png">
-                <h3>Basófilos</h3>
-                <h4>0</h4>
+                <h3>Basófilos</h3><button class="addSub" id="incrementBaso">↑</button><button class="addSub" id="decrementBaso">↓</button>
+                <h4><span id="basoPorcento">0</span><span class="porcento">%</span></h4>
+                <h4 id="baso">0</h4>
             </div>
             <div class="buttonMono">
                 <h2>T ↑ G ↓</h2>
-                <img src="images/counter/mono.svg">
-                <h3>Monócitos</h3>
-                <h4>0</h4>
+                <img src="images/counter/mono.png">
+                <h3>Monócitos</h3><button class="addSub" id="incrementMono">↑</button><button class="addSub" id="decrementMono">↓</button>
+                <h4><span id="monoPorcento">0</span><span class="porcento">%</span></h4>
+                <h4 id="mono">0</h4>
             </div>
         </div>
 
-        <div class="total">Total:<span></span></div>
+        <div class="total">Total: <span id="total">0</span> células</div>
 
-        <div class="reset">Resetar contagem</div>
-        <div class="export">Exportar dados</div>
-    </div>
+        <button class="buttonAmarelo" id="reset">Resetar contagem</button>
+        <button class="buttonAmarelo" id="export">Exportar dados
     
+    </div>
+
+    <script src="counter.js"></script>
 </body>
 
 </html>
