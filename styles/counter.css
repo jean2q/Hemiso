@@ -71,7 +71,9 @@ a {
 }
 
 .buttons div:hover {
-    border: 3px solid #F0F0F5
+    border: 3px solid #F0F0F5;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
 }
 
 .buttons h2,

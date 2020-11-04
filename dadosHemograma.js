@@ -1,4 +1,19 @@
 window.onload = function () {
+   function trataWBC(){
+      const campo = document.getElementById('leuc')
+      campo.addEventListener('input', function () {
+
+         document.getElementById('mono').value = ((localStorage.getItem("monoPorcento")/100)*campo.value).toFixed(2)
+         document.getElementById('eosi').value = ((localStorage.getItem("eosiPorcento")/100)*campo.value).toFixed(2)
+         document.getElementById('linf').value = ((localStorage.getItem("linfPorcento")/100)*campo.value).toFixed(2)
+         document.getElementById('baso').value = ((localStorage.getItem("basoPorcento")/100)*campo.value).toFixed(2)
+         document.getElementById('neut').value = ((localStorage.getItem("neutPorcento")/100)*campo.value).toFixed(2)
+      
+     })
+   }
+
+   trataWBC()
+
    var form = document.getElementById('laudo');
 
    form.addEventListener('submit', function (e) {
