@@ -3,8 +3,6 @@ Arrumar medias para telas menores:
 
 Talvez adicionar opção de segmentados e outras celulas nas contagens (verificar com rafa)
 
-Centralizar no laudo final valores obtidos e valores de referência
-
 Ajustar também no laudo para a quebra de página na impressão ocorrer no local correto
 
 Cadastrar outros valores de referência para idade
@@ -14,5 +12,3 @@ Criar um layout para mobile contendo apenas:
 - contador 
 
 contador deve contar em % e ter a opção para converter para um valor absoluto mediante a contagem total de leucócitos
-
-Ajustar fonte dos campos outras doenças, abuso de droags e observações de estilo de vida
