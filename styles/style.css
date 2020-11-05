@@ -35,8 +35,9 @@ h2 {
     font-size: 28px;
     line-height: 38px;
     color: #425573;
-    padding: 50px;
+    padding:50px;
     padding-left: 0px;
+    
 }
 
 button {
@@ -197,5 +198,90 @@ button .quadrado {
     .container {
         display: flex;
         justify-content: space-around;
+    }
+}
+@media (max-height: 780px) {
+    body{
+        margin-top:4%
+    }
+    h2{
+        padding:45px;
+        padding-left:0px;
+    }
+    button {
+        margin-top:24px;
+    }
+
+}
+@media (max-height: 750px) {
+    body{
+        margin-top:4%
+    }
+    h2{
+        padding:30px;
+        padding-left:0px;
+    }
+    button {
+        margin-top:23px;
+    }
+}
+@media (max-height: 720px) {
+    body{
+        margin-top:4%
+    }
+    h2{
+        padding:20px;
+        padding-left:0px;
+    }
+    button {
+        margin-top:20px;
+    }
+}
+@media (max-height: 700px) {
+    body{
+        margin-top:3%
+    }
+    h2{
+        padding:20px;
+        padding-left:0px;
+    }
+    button {
+        margin-top:20px;
+    }
+}
+@media (max-height: 680px) {
+    body{
+        margin-top:3%
+    }
+    h2{
+        padding:15px;
+        padding-left:0px;
+    }
+    button {
+        margin-top:15px;
+    }
+}
+@media (max-height: 655px) {
+    body{
+        margin-top:2%
+    }
+    h2{
+        padding:15px;
+        padding-left:0px;
+    }
+    button {
+        margin-top:15px;
+    }
+}
+@media (max-height: 630px) {
+    body{
+        margin-top:1%
+    }
+    h2{
+        padding:15px;
+        padding-left:0px;
+    }
+    button {
+        margin-top:15px;
     }
 }
