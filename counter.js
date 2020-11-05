@@ -93,11 +93,11 @@ reset.addEventListener('click', function () {
 })
 
 exporta.addEventListener('click', function () {
-    localStorage.setItem("monoPorcento", document.getElementById('monoPorcento').innerHTML)
-    localStorage.setItem("linfPorcento", document.getElementById('linfPorcento').innerHTML)
-    localStorage.setItem("eosiPorcento", document.getElementById('eosiPorcento').innerHTML)
-    localStorage.setItem("neutPorcento", document.getElementById('neutPorcento').innerHTML)
-    localStorage.setItem("basoPorcento", document.getElementById('basoPorcento').innerHTML)
+    sessionStorage.setItem("monoPorcento", document.getElementById('monoPorcento').innerHTML)
+    sessionStorage.setItem("linfPorcento", document.getElementById('linfPorcento').innerHTML)
+    sessionStorage.setItem("eosiPorcento", document.getElementById('eosiPorcento').innerHTML)
+    sessionStorage.setItem("neutPorcento", document.getElementById('neutPorcento').innerHTML)
+    sessionStorage.setItem("basoPorcento", document.getElementById('basoPorcento').innerHTML)
 
 
     location.href = "/dadosPaciente.html"

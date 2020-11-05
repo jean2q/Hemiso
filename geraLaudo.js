@@ -1,5 +1,5 @@
 
-    var dados = window.localStorage
+    var dados = window.sessionStorage
 
 
     //DADOS PACIENTE
