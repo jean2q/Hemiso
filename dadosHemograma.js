@@ -41,7 +41,7 @@ window.onload = function () {
 
       e.preventDefault();
 
-      location.href = "/laudoFinal.html"
+      location.href = "./laudoFinal.html"
 
    });
 }
