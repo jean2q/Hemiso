@@ -115,7 +115,8 @@ h4 {
     border:white;
 }
 .buttonAmarelo:hover{
-    background-color: #7c6126;
+    background-color: #c7921f;
+    cursor:pointer;
 }
 
 .buttonAmarelo:active {
@@ -147,6 +148,7 @@ h4 {
     border: 1px solid white;
     color: white;
     border-radius: 10px;
+    cursor:pointer;
 }
 
 .addSub:hover {

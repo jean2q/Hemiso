@@ -53,12 +53,16 @@ button {
     line-height: 70px;
     z-index: 10;
     outline: none;
-
+    
 
 }
 
 button:hover {
-    opacity: 0.7;
+    opacity: 0.95;
+    outline-style:solid;
+    outline-color: #E7EAE8;
+    outline-width:3px;
+    cursor:pointer;
 }
 
 button:active {

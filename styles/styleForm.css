@@ -169,10 +169,13 @@ input[type=radio],
 }
 
 button:hover {
-    opacity: 0.7;
+    opacity: 0.95;
+    cursor:pointer;
+    background-color: #c7921f;
 }
 
 button:active {
+    background-color: #c7921f;
     box-shadow: 0 5px #666;
     transform: translateY(4px);
 }
