@@ -285,3 +285,9 @@ button .quadrado {
         margin-top:15px;
     }
 }
+@media (max-height: 500px) {
+    #logo_facul
+    {
+        visibility:hidden;
+    }
+}
