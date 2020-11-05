@@ -15,9 +15,9 @@
 </head>
 
 <body>
-   <div class="report">
+    <div class="report">
         <header>
-            <img src="images/Logo-Uniguacu-PNG.png">
+            <img src="images/logo-Uniguacu-menor.png">
             <h1><a href="./">Hemiso</a></h1>
             <div class="datas">
                 <h3>Data Coleta: <span id="dataCol"></span></h3>
@@ -34,17 +34,18 @@
             <h4>Altura: <span id="altura"></span>m</h4>
             <h4>IMC: <span id="IMC"></span><span id="IMCcoment"></span></h4>
         </div>
-       
+
         <h2>Situação Clínica</h2>
         <div class="dadosPaciente">
             <h4>Uso de Fármacos: <span id="farmacos"></span></h4>
             <h4>Jejum: <span id="jejum"></span></h4>
             <h4>Gestante: <span id="gestante"></span></h4>
             <h4>Ritmo Circadiano: <span id="ritmo"></span></h4>
-            <h4>Efeitos exercícios físicos: <span id="altitude"></span></h4> <!-- verificar pois id não bate com o seu "label", foi alterado tanto aqui, quanto no form -->
+            <h4>Efeitos exercícios físicos: <span id="altitude"></span></h4>
+            <!-- verificar pois id não bate com o seu "label", foi alterado tanto aqui, quanto no form -->
             <h4>Pressão Arterial: <span id="pA"></span>mmHg</h4>
         </div>
-       
+
         <h2>Doenças Crônicas Não Transmissíveis</h2>
         <div class="dadosPaciente">
             <h4>Diabetes: <span id="diabetes"></span></h4>
@@ -53,7 +54,7 @@
             <h4>Doenças Respiratórias: <span id="dnctResp"></span></h4>
             <h4>Outras doenças e observações: <span id="dcntOutros"></span></h4>
         </div>
-       
+
         <h2>Estilo de Vida</h2>
         <div class="dadosPaciente">
             <h4>Tabagismo: <span id="tabagismo"></span></h4>
@@ -63,7 +64,7 @@
             <h4>Consumo de drogas: <span id="drogas"></span></h4>
             <h4>Observações: <span id="estiloOBS"></span></h4>
         </div>
-       
+        <span class="break"></span>
         <div class="hemograma">
             <div class="serieVermelha">
                 <h2>Série Vermelha</h2>
@@ -73,20 +74,25 @@
                 <h4>VCM: <span id="VCM"></span> fL</h4>
                 <h4>HCM: <span id="HCM"></span> pcg</h4>
                 <h4>CHCM: <span id="CHCM"></span> % </h4>
-                <h4>Outros achados: <span id="hem_outros"></span></h4>
-                <h4>Metodologia: <span id="hem_metodo"></span></h4>
-                <h4>Observações e alertas: <span id="hem_obs"></span></h4>
             </div>
             <div class="valorRef">
                 <h2>Valores de Referência</h2>
                 <h4>Hematócrito: <span id="refHt.min"></span> a <span id="refHt.max"></span> %</h4>
-                <h4>Contagem de hemácias: <span id="refHemacias.min"> </span> a <span id="refHemacias.max"></span>x10<sup>12</sup>/L
+                <h4>Contagem de hemácias: <span id="refHemacias.min"> </span> a <span
+                    id="refHemacias.max"></span>x10<sup>12</sup>/L
                 </h4>
                 <h4>Hemoglobina: <span id="refHb.min"></span> a <span id="refHb.max"></span> g/dL</h4>
                 <h4>VCM: <span id="refVCM.min"></span> a <span id="refVCM.max"></span> fL</h4>
                 <h4>HCM: <span id="refHCM.min"></span> a <span id="refHCM.max"></span> pcg</h4>
                 <h4>CHCM: <span id="refCHCM.min"></span> a <span id="refCHCM.max"></span> %</h4>
             </div>
+
+<div class="fullLine">
+                <h4>Metodologia: <span id="hem_metodo"></span></h4>
+                <h4>Observações e alertas: <span id="hem_obs"></span></h4>
+                <h4>Outros achados: <span id="hem_outros"></span></h4>
+</div class="fullLine">
+
             <div class="serieBranca">
                 <h2>Série Branca</h2>
                 <h4>Leucócitos: <span id="leuc"></span> x10^<sup>9</sup>/L</h4>
@@ -95,9 +101,6 @@
                 <h4>Basófilos: <span id="baso"></span> x10^<sup>9</sup>/L</h4>
                 <h4>Monócitos: <span id="mono"></span> x10^<sup>9</sup>/L</h4>
                 <h4>Linfócitos: <span id="linf"></span> x10^<sup>9</sup>/L</h4>
-                <h4>Outros achados: <span id="leuc_outros"></span></h4>
-                <h4>Metodologia: <span id="leuc_metodo"></span></h4>
-                <h4>Observações:  <span id="leuc_obs"></span></h4>
             </div>
             <div class="valorRef">
                 <h2>Valores de Referência</h2>
@@ -108,23 +111,31 @@
                 <h4>Monócitos: <span id="refMono.min"></span> a <span id="refMono.max"></span> x10^<sup>9</sup>/L</h4>
                 <h4>Linfócitos: <span id="refLinf.min"></span> a <span id="refLinf.max"></span> x10^<sup>9</sup>/L</h4>
             </div>
+            <div class="fullLine">
+                <h4>Metodologia: <span id="leuc_metodo"></span></h4>
+                <h4>Observações e alertas: <span id="leuc_obs"></span></h4>
+                <h4>Outros achados: <span id="leuc_outros"></span></h4>
+            </div>
         </div>
         <div class="plaquetograma">
             <div class="dadosPlaq">
-            <h2>Plaquetograma</h2>
-            <h4>Contagem de plaquetas:<span id="plac_cont"></span> x10<sup>9</sup> /L </h4>
-            <h4>Outros achados: <span id="plac_outros"></span></h4>
-            <h4>Metodologia: <span id="plac_metodo"></span></h4>
-            <h4>Observações: <span id="plac_obs"></span></h4>
-        </div>
+                <h2>Plaquetograma</h2>
+                <h4>Contagem de plaquetas:<span id="plac_cont"></span> x10<sup>9</sup> /L </h4>
+            </div>
             <div class="valorRef">
                 <h2>Valores de Referência</h2>
-                <h4>Contagem de plaquetas: <span id="refPlaq.min"></span> a <span id="refPlaq.max"></span> x 10<sup>9</sup> /L</h4>
+                <h4>Contagem de plaquetas: <span id="refPlaq.min"></span> a <span id="refPlaq.max"></span> x
+                    10<sup>9</sup> /L</h4>
             </div>
-       
-       
+            <div class="fullLine">
+                <h4>Metodologia: <span id="plac_metodo"></span></h4>
+                <h4>Observações e alertas: <span id="plac_obs"></span></h4>
+                <h4>Outros achados: <span id="plac_outros"></span></h4>
+            </div>
         </div>
-   </div class="report">
+        </div>
+        </body>
+    </div class="report">
 
 
     <script src="geraLaudo.js"></script>
