@@ -100,5 +100,5 @@ exporta.addEventListener('click', function () {
     sessionStorage.setItem("basoPorcento", document.getElementById('basoPorcento').innerHTML)
 
 
-    location.href = "/dadosPaciente.html"
+    location.href = "./dadosPaciente.html"
 })

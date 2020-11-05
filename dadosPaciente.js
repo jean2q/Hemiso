@@ -18,6 +18,6 @@ window.onload = function () {
 
 		e.preventDefault();
 
-		location.href = "/dadosHemograma.html" //muda para proxima pagina
+		location.href = "./dadosHemograma.html" //muda para proxima pagina
 	});
 }
