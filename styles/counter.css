@@ -44,6 +44,8 @@ body {
     height: 100%;
     border-radius: 8px;
     padding:20px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
 }
 
 img {
@@ -72,6 +74,8 @@ a {
     border-radius: 10px;
     left: 10px;
     width: 194px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
 }
 
 .buttons div:hover {
@@ -137,6 +141,8 @@ h4 {
     margin-top: 2%;
     line-height: 72px;
     text-align:center;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
 }
 
 
