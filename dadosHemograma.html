@@ -6,8 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hemiso - Uniguaçu</title>
 
-    <!--<link rel="stylesheet" href="style2.css">-->
-
+   
+    
+    <link rel="stylesheet" href="./styles/styleForm.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <link
         href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
@@ -18,85 +19,130 @@
 
 <body>
     <header>
-        <div class="logo">
-            <a href="/">Hemiso</a>
-        </div>
 
-        <div>
-            <a href="/dadosPaciente.html">voltar</a>
-        </div>
+            <div class="logo">
+                <a href="/">Hemiso</a>
+            </div>
+    
+            <div class="voltar">
+                <a href="/">
+                <img src="./images/setaVoltar.png">
+                Voltar para o início</a>
+            </div>
+    
+        </header>
 
-    </header>
 
+    <div id="containerFundo">
     <form id="laudo">
         <h1>Série Vermelha</h1>
 
-        <div>
+        <div class="flex">
+            <div>
+                <label for="ht">Hematócrito</label>
+                <span>%</span>
+                <input type="number" id="ht" name="ht" step="0.01">
+            </div>
 
-            <label for="ht">Hematócrito</label>
-            <input type="number" id="ht" name="ht" placeholder="%" step="0.01">
+            <div>
+                <label for="hem_cont">Contagem de hemácias </label>
+                <span>x10<sup>12</sup>/L</span>
+                <input type="number" id="hem_cont" name="hem_cont" placeholder="x10¹²/L" step="0.01">
+            </div>
 
-            <label for="hem_cont">Contagem de hemácias </label>
-            <input type="number" id="hem_cont" name="hem_cont" placeholder="x10¹²/L" step="0.01">
+            <div>
+                <label for="hb">Hemoglobina</label>
+                <span>g/dL</span>
+                <input type="number" id="hb" name="hb" placeholder="g/dL" step="0.01">
+                
+            </div>
 
-            <label for="hb">Hemoglobina</label>
-            <input type="number" id="hb" name="hb" placeholder="g/dL" step="0.01">
+            <div>
+                <label for="hem_outros">Outros Achados</label>
+                <input type="text" id="hem_outros" name="hem_outros">
+            </div>
 
-            <label for="hem_outros">Outros Achados</label>
-            <input type="text" id="hem_outros" name="hem_outros">
-
-            <label for="hem_metodo">Metodologias</label>
-            <input type="text" id="hem_metodo" name="hem_metodo">
-
+            <div>
+                <label for="hem_metodo">Metodologias</label>
+                <input type="text" id="hem_metodo" name="hem_metodo">
+            </div>
         </div>
 
         <h1>Série Branca</h1>
-        <div>
+        <div class="flex">
 
-            <label for="leuc">Contagem de Leucócitos</label>
-            <input type="number" id="leuc" name="leuc" step="0.01" placeholder="x10^9/L">
+           <div>
+                <label for="leuc">Contagem de Leucócitos</label>
+                <span>x10<sup>9</sup>/L</span>
+                <input type="number" id="leuc" name="leuc" step="0.01" placeholder="x10^9/L">
+           </div>
 
-            <label for="neut">Neutrófilos</label>
-            <input type="number" id="neut" name="neut" step="0.01" placeholder="x10^9/L">
+            <div>
+                <label for="neut">Neutrófilos</label>
+                <span>x10<sup>9</sup>/L</span>
+                <input type="number" id="neut" name="neut" step="0.01" placeholder="x10^9/L">
+                
+            </div>
+            <div>
+                <label for="eosi">Eosinófilos</label>
+                <span>x10<sup>9</sup>/L</span>
+                <input type="number" id="eosi" name="eosi" step="0.01" placeholder="x10^9/L">
+            </div>
 
-            <label for="eosi">Eosinófilos</label>
-            <input type="number" id="eosi" name="eosi" step="0.01" placeholder="x10^9/L">
-
-            <label for="baso">Basófilos</label>
-            <input type="number" id="baso" name="baso" step="0.01" placeholder="x10^9/L">
-
-            <label for="mono">Monócitos</label>
-            <input type="number" id="mono" name="mono" step="0.01" placeholder="x10^9/L">
-
-            <label for="linf">Linfócitos Típicos</label>
-            <input type="number" id="linf" name="linf" step="0.01" placeholder="x10^9/L">
-
-            <label for="leuc_outros">Outros Achados</label>
-            <input type="text" id="leuc_outros" name="leuc_outros">
-
-            <label for="leuc_metodo">Metodologias</label>
-            <input type="text" id="leuc_metodo" name="leuc_metodo">
-
+            <div>
+                <label for="baso">Basófilos</label>
+                <span>x10<sup>9</sup>/L</span>
+                <input type="number" id="baso" name="baso" step="0.01" placeholder="x10^9/L"> 
+            </div>
         </div>
 
-        <div>
-            <h1>Plaquetograma</h1>
-            <label for="plac_cont">Contagem de Plaquetas</label>
-            <input type="number" id="plac_cont" name="plac_cont" step="0.01">
+        <div class="flex">
+            <div>
+                <label for="mono">Monócitos</label>
+                <span>x10<sup>9</sup>/L</span>
+                <input type="number" id="mono" name="mono" step="0.01" placeholder="x10^9/L">
+            </div>
 
-            <label for="plac_outros">Outros Achados</label>
-            <input type="text" id="plac_outros" name="plac_outros">
+            <div>
+                <label for="linf">Linfócitos</label>
+                <span>x10<sup>9</sup>/L</span>
+                <input type="number" id="linf" name="linf" step="0.01" placeholder="x10^9/L">
+            </div>
 
-            <label for="plac_metodo">Metodologias</label>
-            <input type="text" id="plac_metodo" name="plac_metodo">
+            <div>
+                <label for="leuc_outros">Outros Achados</label>
+                <input type="text" id="leuc_outros" name="leuc_outros">
+            </div>
 
-            <input type="submit" value="Gerar Laudo">
+            <div>
+                <label for="leuc_metodo">Metodologias</label>
+                <input type="text" id="leuc_metodo" name="leuc_metodo">
+            </div>
         </div>
 
+        <h1>Plaquetograma</h1>
+        <div class="flex">
+
+            <div>
+                <label for="plac_cont">Contagem de Plaquetas</label>
+                <span>x10<sup>9</sup>/L</span>
+                <input type="number" id="plac_cont" name="plac_cont" step="0.01">
+            </div>
+
+            <div>
+                <label for="plac_outros">Outros Achados</label>
+                <input type="text" id="plac_outros" name="plac_outros">
+            </div>
+
+            <div>
+                <label for="plac_metodo">Metodologias</label>
+                <input type="text" id="plac_metodo" name="plac_metodo">
+            </div>
+
+            <button type="submit">Gerar Laudo</button>
+        </div>
     </form>
-
-    <br>
-    <div id="texto"></div>
+</div>
 
 </body>
 <script src="dadosHemograma.js"></script>
