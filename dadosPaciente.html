@@ -31,114 +31,164 @@
 
     <form id="formPaciente">
         <div id="containerFundo">
-            <div class="dadosPaciente">
-                <span class="flex">
+            <span class="flex">
                 <h1>Dados do Paciente</h1>
                 <div class="datas">
-                    <label for="dataCol">Data da Coleta</label>
-                    <input type="date" id="dataCol" name="dataCol">
+                    <label for="dataCol">Data da Coleta
+                        <input type="date" id="dataCol" name="dataCol"></label>
 
-                    <label for="dataLib">Data da Liberação</label>
-                    <input type="date" id="dataLib" name="dataLib">
+                    <label for="dataLib">Data da Liberação
+                        <input type="date" id="dataLib" name="dataLib"></label>
                 </div>
             </span>
+
+
+            <div class="full_container">
                 <label for="nome">Nome</label>
                 <input type="text" id="nome" name="nome">
+            </div>
 
-                <label for="idade">Idade</label>
-                <input type="number" id="idade" name="idade">
+            <div class="flex">
+                <div>
+                    <label for="idade">Idade</label>
+                    <input type="number" id="idade" name="idade" placeholder="anos">
+                </div>
 
-                <label for="etnia">Raça/Etnia</label>
-                <select name="etnia" id="etnia">
-                    <option>Selecione uma opção</option>
-                    <option value="Preto">Preto</option>
-                    <option value="Pardo">Pardo</option>
-                    <option value="Amarelo">Amarelo</option>
-                    <option value="Branco">Branco</option>
-                    <option value="Indígena">Indígena</option>
-                </select>
+                <div>
+                    <label for="etnia">Raça/Etnia</label>
+                    <select name="etnia" id="etnia">
+                        <option>Selecione uma opção</option>
+                        <option value="Preto">Preto</option>
+                        <option value="Pardo">Pardo</option>
+                        <option value="Amarelo">Amarelo</option>
+                        <option value="Branco">Branco</option>
+                        <option value="Indígena">Indígena</option>
+                    </select>
+                </div>
 
 
-                <span>
-                    Sexo
-                    <input type="radio" id="masc" name="sexo" value="masc">
-                    <label for="masc">Masculino</label>
 
-                    <input type="radio" id="fem" name="sexo" value="fem">
-                    <label for="fem">Feminino</label>
-                </span>
-                <label for="peso">Peso (kg)</label>
-                <input type="number" id="peso" name="peso" placeholder="kgs">
+                <div class="sexo">
+                    <div style="line-height:77px;">
+                        <label>Sexo</label>
+                    </div>
+                    <div class="input_center">
+                        <label for="masc">Masculino</label>
+                        <input type="radio" id="masc" name="sexo" value="masc">
+                    </div>
+                    <div class="input_center">
+                        <label for="fem">Feminino</label>
+                        <input type="radio" id="fem" name="sexo" value="fem">
+                    </div>
+                </div>
+                <div>
+                    <label for="peso">Peso (kg)</label>
+                    <input type="number" id="peso" name="peso" placeholder="kgs">
+                </div>
 
-                <label for="altura">Altura (cm)</label>
-                <input type="number" id="altura" name="altura" placeholder="cm">
+                <div>
+                    <label for="altura">Altura (cm)</label>
+                    <input type="number" id="altura" name="altura" placeholder="cm">
 
+                </div>
             </div>
 
             <h1>Situação Clínica</h1>
-            <div>
-                <label for="farmacos">Uso de Fármacos</label>
-                <input type="text" id="farmacos" name="farmacos">
+            <div class="flex">
+                <div>
+                    <label for="farmacos">Uso de Fármacos</label>
+                    <input type="text" id="farmacos" name="farmacos">
+                </div>
 
-                <input type="checkbox" id="jejum" name="jejum">
-                <label for="jejum">Jejum</label>
+                <div class="input_center">
+                    <label for="jejum">Jejum</label>
+                    <input type="checkbox" id="jejum" name="jejum">
+                </div>
 
-                <input type="checkbox" id="gestante" name="gestante">
-                <label for="gestante">Gestante</label>
+                <div class="input_center">
+                    <label for="gestante">Gestante</label>
+                    <input type="checkbox" id="gestante" name="gestante">
+                </div>
 
-                <label for="ritmo">Ritmo Circadiano</label>
-                <input type="text" id="ritmo" name="ritmo">
+                <div>
+                    <label for="ritmo">Ritmo Circadiano</label>
+                    <input type="text" id="ritmo" name="ritmo">
+                </div>
 
-                <label for="altitude">Efeitos exercícios físicos/Altitude</label>
-                <input type="text" id="altitude" name="altitude">
-
-                <label for="pA">Pressão Arterial</label>
-                <input type="text" id="pA" name="pA">
+                <div>
+                    <label for="altitude">Efeitos exercícios físicos</label>
+                    <input type="text" id="altitude" name="altitude">
+                </div>
+                <div>
+                    <label for="pA">Pressão Arterial</label>
+                    <input type="text" id="pA" name="pA">
+                </div>
 
             </div>
 
-            <div>
-                <h1> Doenças Crônicas Não Transmissíveis</h1>
-                <input type="checkbox" id="diabetes" name="diabetes">
-                <label for="diabetes">Diabetes</label>
+            <h1> Doenças Crônicas Não Transmissíveis</h1>
+            <div class="flex">
 
-                <input type="checkbox" id="hpa" name="hpa">
-                <label for="hpa">Hipertensão Arterial</label>
+                <div class="input_center">
+                    <label for="diabetes">Diabetes</label>
+                    <input type="checkbox" id="diabetes" name="diabetes">
+                </div>
 
-                <input type="checkbox" id="canceres" name="canceres">
-                <label for="canceres">Cânceres</label>
+                <div class="input_center">
+                    <label for="hpa">Hipertensão Arterial</label>
+                    <input type="checkbox" id="hpa" name="hpa">
+                </div>
 
-                <input type="checkbox" id="dnctResp" name="dnctResp">
-                <label for="dnctResp">Deficiência Nutricional</label>
+                <div class="input_center">
+                    <label for="canceres">Cânceres</label>
+                    <input type="checkbox" id="canceres" name="canceres">
+                </div>
 
-                <label for="dcntOutros">Outras doenças e observações</label>
-                <textarea id="dcntOutros" name="dcntOutros" rows="4">
-            </textarea>
+                <div class="input_center">
+                    <label for="dnctResp">Deficiência Nutricional</label>
+                    <input type="checkbox" id="dnctResp" name="dnctResp">
+                </div>
+
+                <div>
+                    <label for="dcntOutros">Outras doenças</label>
+                    <input id="dcntOutros" name="dcntOutros" rows="4">
+
+                </div>
             </div>
-            <div>
-                <h1>Estilo de vida</h1>
-                <input type="checkbox" id="tabagismo" name="tabagismo">
-                <label for="tabagismo">Tabagismo</label>
+            <h1>Estilo de vida</h1>
+            <div class="flex">
+                <div class="input_center">
+                    <label for="tabagismo">Tabagismo</label>
+                    <input type="checkbox" id="tabagismo" name="tabagismo">
+                </div>
 
-                <input type="checkbox" id="sedentarismo" name="sedentarismo">
-                <label for="sedentarismo">Sedentarismo</label>
+                <div class="input_center">
+                    <label for="sedentarismo">Sedentarismo</label>
+                    <input type="checkbox" id="sedentarismo" name="sedentarismo">
+                </div>
 
-                <input type="checkbox" id="etilismo" name="etilismo">
-                <label for="etilismo">Etilismo</label>
+                <div class="input_center">
+                    <label for="etilismo">Etilismo</label>
+                    <input type="checkbox" id="etilismo" name="etilismo">
+                </div>
 
-                <input type="checkbox" id="def_Nutricional" name="def_Nutricional">
-                <label for="def_Nutricional">Deficiência Nutricional</label>
+                <div class="input_center">
+                    <label for="def_Nutricional">Deficiência Nutricional</label>
+                    <input type="checkbox" id="def_Nutricional" name="def_Nutricional">
+                </div>
 
-                <textarea id="drogas" name="drogas" rows="4">
-            </textarea>
-                <label for="drogas">Abuso de drogas</label>
+                <div class="input_center">
+                    <label for="drogas">Abuso de drogas</label>
+                    <input id="drogas" name="drogas">
+                </div>
 
-                <textarea id="estiloOBS" name="estiloOBS" rows="4">
-            </textarea>
-                <label for="estiloOBS">Observações</label>
-                <span>
+                <div class="input_center">
+                    <label for="estiloOBS">Observações</label>
+                    <input id="estiloOBS" name="estiloOBS">
+                </div>
+                <div>
                     <button type="submit">Próximo</a>
-                </span>
+                </div>
             </div>
     </form>
     </div>

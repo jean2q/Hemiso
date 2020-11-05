@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -15,40 +16,36 @@
 </head>
 
 <body>
-    <header>
-        <div class="logo">
-            <a href="/">Hemiso</a>
-        </div>
-        <nav>
-            <ul>
-                <li><a href="/">blablabla</a></li>
-                <li><a href="/">Entre em contato</a></li>
-            </ul>
-        </nav>
-    </header>
-
-
-    <main>Padronização de laudos de hemograma e classificação de anemias.</main>
-
-    <a href="./dadosPaciente.html"><div class="button1">
-        <div class="quadrado"><img src="/images/Buscar.png" alt=""></div>
-        <button id="laudagem">Laudagem</button>
-    </div></a>
-
-    <a href="./counter.html"><div class="button2">
-        <div class="quadrado2"><img src="/images/Buscar.png" alt=""></div>
-        <button id="calculadora">Calculadora</button>
-    </div></a>
-
-    <div class="mask">
-        <img src="images/mask.svg">
+    <div class="logo">
+        <a href="/">Hemiso</a>
     </div>
-    <div class="hemacias">
-        <img src="images/hematologia.png">
+
+    <h2>Padronização de laudos de hemograma e classificação de anemias.</h2>
+
+    <div class="container">
+        <button onclick="location.href = './dadosPaciente.html'">
+            <div class="quadrado"><img src="/images/laudagem.png"></div>
+            <div>
+                <p class="button_text">Laudagem</p>
+            </div>
+        </button>
+
+        <button onclick="location.href = './counter.html'">
+            <div class="quadrado"><img src="/images/laudagem.png"></div>
+            <div>
+                <p class="button_text">Diferencial</p>
+            </div>
+        </button>
     </div>
-    <div class="logo_facul">
-        <img src="images/Logo-Uniguacu-PNG.png">
+
+
+    <div class="bg">
+        <img id="hemacias" src="images/hematologia.png">
+        <img id="mask" src="images/mask.svg">
+        <img id="logo_facul" src="images/Logo-Uniguacu-PNG.png">
+
     </div>
+
 </body>
 
 </html>

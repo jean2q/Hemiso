@@ -1,9 +1,10 @@
-header{
-    display:flex;
+header {
+    display: flex;
     justify-content: space-between;
     align-items: center;
 }
-body{
+
+body {
     background-color: #F0F0F5;
 }
 
@@ -17,43 +18,125 @@ body{
 }
 
 a {
-    color:inherit;
-    text-decoration:none;
+    color: inherit;
+    text-decoration: none;
 }
-.voltar{
-    display:flex;
+
+.voltar {
+    display: flex;
     font-family: 'Roboto';
     font-weight: bold;
     color: #432344;
 }
-.voltar img{
+
+.voltar img {
     max-height: 30px;
-    padding:0px;
+    padding: 0px;
     margin-top: -3px;
     margin-right: 10px;
 }
 
-#containerFundo{
-    background-color:white;
-    margin:auto;
+#containerFundo {
+    background-color: white;
+    margin: auto;
     width: 65%;
-    height: 1350px;
-    border-radius:10px;
-    display:flex;
-    flex-wrap:wrap;
+    height: 100%px;
+    border-radius: 10px;
+    padding: 1%;
 }
 
-.datas{
-    display:flex;
-    flex-direction:column;
-}
-.datas input{
-    height:25px;
-    width:110px;
-    border-radius:10px;
+.datas {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    line-height: 60px;
 }
 
-.flex{
-    display:flex;
-    justify-content:space-between;
+.datas input {
+    height: 25px;
+    width: 135px;
+    border-radius: 10px;
+}
+
+.datas input,
+.datas label {
+    margin: auto;
+    text-align: center;
+    padding-left: 10px;
+}
+
+.flex {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+h1 {
+    font-family: 'Ubuntu';
+    font-weight: bold;
+    font-size: 36px;
+    color: #322153;
+}
+
+input,
+select,
+textarea {
+    border: none;
+    background-color: #F0F0F5;
+    border-radius: 10px;
+    max-width: 200px;
+    height: 55px;
+}
+
+label {
+    font-family: 'Roboto';
+    color: #6C6C80;
+}
+
+input,
+label {
+    display: block;
+}
+
+.full_container input,
+.full_container label {
+    margin: auto;
+    max-width: 100%;
+    width: 100%;
+}
+
+.full_container input {
+    margin-bottom: 5px;
+}
+
+.sexo {
+    border: 3px solid #F0F0F5;
+    border-radius: 10px;
+    display: flex;
+}
+
+.sexo div {
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+button {
+    height: 55px;
+    width: 265px;
+    background-color: #ffc03d;
+    border-radius: 10px;
+    color: white;
+    font-family: 'Roboto';
+    font-weight: bold;
+    line-height: 55px;
+    text-align: center;
+    font-size: 24px;
+    border: none;
+    align-self: flex-end;
+    margin-top: 19px;
+}
+
+.input_center label,
+input {
+    margin: auto;
 }
