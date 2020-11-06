@@ -50,7 +50,65 @@
 
 
     // RELACIONA VALORES DE REFERÊNCIA COM IDADE E SEXO DO PACIENTE
-    if (dados.sexo == 'false' && dados.idade > 12) //se for masculino adulto
+    if (dados.idade <= 12 && dados.idade >= 6) //se for menor ou igual que 12 anos e maior ou igual 6
+    {
+        var valorRef = {
+            ID: 'de 6 a 12 anos',
+            refHemacias: {min: 3.9, max: 5.1},
+            refHb: {min: 11, max: 14},
+            refHt: {min: 35, max: 45}, 
+            refVCM: {min: 77, max: 95},
+            refHCM: {min: 25, max: 33},
+            refCHCM: {min: 31, max: 37}, 
+            refLeuc: {min: 5, max: 13},
+            refNeut: {min: 2, max:8},
+            refLinf: {min: 1, max: 5},
+            refMono: {min: 0.2, max: 1},
+            refEosi: {min: 0.1, max: 1},
+            refBaso: {min: 0.02, max: 0.1}, 
+            refPlaq: {min: 180, max: 400},
+        }
+    }
+    else if (dados.idade < 6 && dados.idade >= 2) //sse for menor do que 6 e maior ou igual a 1 ano
+    {
+        var valorRef = {
+            ID: 'de 2 a 5.99 anos',
+            refHemacias: {min: 3.9, max: 5.1}, 
+            refHb: {min: 11.1, max: 14.1},
+            refHt: {min: 34, max: 40}, 
+            refVCM: {min: 75, max: 87},
+            refHCM: {min: 24, max: 30},
+            refCHCM: {min: 31, max: 37}, 
+            refLeuc: {min: 5, max: 15},
+            refNeut: {min: 1.5, max:8},
+            refLinf: {min: 6, max: 9},
+            refMono: {min: 0.2, max: 1},
+            refEosi: {min: 0.1, max: 1},
+            refBaso: {min: 0.02, max: 0.1}, 
+            refPlaq: {min: 200, max: 450},
+        }
+    }
+    else if (dados.idade < 2) //sse for menor do que 6 e maior ou igual a 1 ano
+    {
+        var valorRef = {
+            ID: 'menor que 2 anos',
+            refHemacias: {min: 3.9, max: 5.1}, 
+            refHb: {min: 11.1, max: 14.1},
+            refHt: {min: 30, max: 38}, 
+            refVCM: {min: 72, max: 84},
+            refHCM: {min: 24, max: 30},
+            refCHCM: {min: 31, max: 37}, 
+            refLeuc: {min: 6, max: 16},
+            refNeut: {min: 1, max:7},
+            refLinf: {min: 3.5, max: 11},
+            refMono: {min: 0.2, max: 1},
+            refEosi: {min: 0.1, max: 1},
+            refBaso: {min: 0.02, max: 0.1}, 
+            refPlaq: {min: 200, max: 550},
+        }
+    }
+
+    else if (dados.sexo == 'false' && dados.idade > 12) //se for masculino adulto maior que 12 anos
     {
         var valorRef = {
             ID: 'MASCULINO ADULTO',
