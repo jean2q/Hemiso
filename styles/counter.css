@@ -32,7 +32,6 @@ header h1 {
 
 body {
     background-color: #F0F0F5;
-
 }
 
 
@@ -41,7 +40,6 @@ body {
     margin-top:10px;
     max-width: 1228px;
     background-color: white;
-    height: 100%;
     border-radius: 8px;
     padding:20px;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
@@ -50,7 +48,7 @@ body {
 
 img {
     max-height: 140px;
-    margin:10px 0;
+    margin:10px;
 }
 
 a {
@@ -60,7 +58,6 @@ a {
 
 .buttons {
     position: relative;
-    top: 8%;
     display: flex;
     text-align: center;
     justify-content: space-around;
@@ -160,4 +157,100 @@ h4 {
 .addSub:hover {
     background-color: #322153;
     border: 3px solid #F0F0F5;
+}
+
+@media (max-height: 825px){
+    .buttons div {
+        margin-top: 9px;
+        padding: 19px 20px;
+    }
+    
+    .container {
+        margin-top:9px;
+        padding:19px 20px;
+    }
+    
+    header {
+    margin-top: 25px;
+    }
+}
+@media (max-height: 815px){
+    .buttons div {
+        margin-top: 5px;
+        padding: 15px 20px;
+    }
+    
+    .container {
+        margin-top:5px;
+        padding:15px 20px;
+    }
+    
+    header {
+    margin-top: 20px;
+    }
+}
+@media (max-height: 780px){
+    .buttons div {
+        margin-top: 5px;
+        padding: 10px 20px;
+    }
+    
+    .container {
+        margin-top:3px;
+        padding:8px 20px;
+    }
+    
+    header {
+    margin-top: 5px;
+    }
+}
+@media (max-height: 745px){
+    .buttons div {
+        margin-top: 2px;
+        padding: 2px 20px;
+    }
+    
+    .container {
+        margin-top:2px;
+        padding:8px 20px;
+    }
+    
+    header {
+    margin-top: 3px;
+    }
+}
+@media (max-height: 700px){
+    .buttons div {
+        margin-top: 1px;
+        padding: 1px 20px;
+    }
+    
+    .container {
+        margin-top:1px;
+        padding:8px 20px;
+    }
+    
+    header {
+    margin-top: 1px;
+    }
+
+}
+@media (max-height: 680px){
+    .buttons div {
+        margin-top: 1px;
+        padding: 1px 20px;
+    }
+    
+    .container {
+        margin-top:1px;
+        padding:8px 20px;
+    }
+    
+    header {
+    margin-top: 1px;
+    }
+    .total {
+        margin-top:1%;
+    }
+    
 }
