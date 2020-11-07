@@ -10,10 +10,10 @@ header {
     margin-left: 5%;
     margin-right: 5%;
     margin-top: 30px;
-    align-items:center;
+    align-items:flex-end;
 }
 
-header h1 {
+h1 {
     color: #322153;
     font-family: 'ubuntu', sans-serif;
     font-size: 2rem;
@@ -30,8 +30,24 @@ header h1 {
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
+.voltar {
+    display: flex;
+    font-family: 'Roboto';
+    font-weight: bold;
+    color: #432344;
+    line-height:30px;
+    align-items:flex-end;
+}
+.voltar img{
+    position:relative;
+    top:4px;
+    height:100%;
+    margin:0px;
+}
+
 body {
     background-color: #F0F0F5;
+    margin-top:0px;
 }
 
 
@@ -159,6 +175,8 @@ h4 {
     border: 3px solid #F0F0F5;
 }
 
+
+
 @media (max-height: 825px){
     .buttons div {
         margin-top: 9px;
@@ -218,6 +236,9 @@ h4 {
     header {
     margin-top: 3px;
     }
+    .logo{
+        font-size:60px;
+    }
 }
 @media (max-height: 700px){
     .buttons div {
@@ -228,6 +249,9 @@ h4 {
     .container {
         margin-top:1px;
         padding:8px 20px;
+    }
+    .logo{
+        font-size:55px;
     }
     
     header {
@@ -252,5 +276,38 @@ h4 {
     .total {
         margin-top:1%;
     }
+    .logo{
+        font-size:50px;
+    }
+}
+
+@media (max-height: 680px){
+    .buttons div {
+        margin-top: 1px;
+        padding: 1px 20px;
+    }
     
+    .container {
+        margin-top:1px;
+        padding:8px 20px;
+    }
+    
+    header {
+    margin-top: 1px;
+    }
+    .total {
+        margin-top:1%;
+    }
+    .logo{
+        font-size:50px;
+    }
+    .total{
+        margin:auto;
+    }
+    .flex_buttons{
+        margin-top:10px;
+        display:flex;
+        align-items:center;
+        justify-content:center;
+    }
 }
