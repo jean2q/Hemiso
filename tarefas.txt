@@ -1,14 +1,13 @@
-Arrumar medias para telas menores:
-- count (se for possível diminuir tudo de uma vez kkk) //acho que ok
 
 Talvez adicionar opção de segmentados e outras celulas nas contagens (verificar com Rafael)
-
-Ajustar também no laudo para a quebra de página na impressão ocorrer no local correto //Acho que ficou ok
-
-Cadastrar outros valores de referência para idade //faltando menor do que 1 ano (pensar em como fazer isso)
 
 Criar um layout para mobile contendo apenas:
 - index
 - contador 
 
 contador deve contar em % e ter a opção para converter para um valor absoluto mediante a contagem total de leucócitos
+
+quando exportar do contador, travar os campos do diferencial no dadosHemograma.html
+
+arrumar botão do dadosPaciente.html para ficar posicionado à direita;
+

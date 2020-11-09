@@ -200,3 +200,12 @@ button:active {
 input::placeholder {
     visibility: hidden;
 }
+
+.tipoIdade {
+    float:right;
+    position:relative;
+    margin-top:-56px;
+}
+.tipoIdade option{
+    text-align:center;
+}

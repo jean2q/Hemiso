@@ -53,9 +53,19 @@
             <div class="flex">
                 <div>
                     <label for="idade">Idade</label>
-                    <span>anos</span>
+                    <div>
                     <input type="number" id="idade" name="idade">
+                    <div class="tipoIdade">
+                    <label for="tipoIdade"></label>
+                    <select name="tipoIdade" id="tipoIdade">
+                        <option value="anos">anos</option>
+                        <option value="meses">meses</option>
+                        <option value="dias">dias</option>
+                    </select>
+                    </div>
                 </div>
+                </div>
+
 
                 <div>
                     <label for="etnia">Raça/Etnia</label>
@@ -189,7 +199,7 @@
                     <label for="estiloOBS">Observações</label>
                     <input type="text" id="estiloOBS" name="estiloOBS">
                 </div>
-                <div>
+                <div class="submit">
                     <button type="submit">Próximo</a>
                 </div>
             </div>
