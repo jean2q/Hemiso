@@ -1,4 +1,5 @@
-
+     console.log('teste')
+    
     var dados = window.sessionStorage
 
     //DADOS PACIENTE
@@ -285,7 +286,7 @@
                 refPlaq: {min: 210, max: 650},
             }
     }
-
+    }
   
     function preencherVR (dados){ //preenche dados de campos com o mesmo ID no formulário e no laudo
     
@@ -422,6 +423,6 @@
             }
         }
     }
-
+    
     preencherFlags(anemia, 'hem_obs')
     preencherFlags(serieBranca, 'leuc_obs')
