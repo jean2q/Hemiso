@@ -1,13 +1,49 @@
+arrumar botão do dadosPaciente.html para ficar posicionado à direita;
 
-Talvez adicionar opção de segmentados e outras celulas nas contagens (verificar com Rafael)
+Talvez adicionar opção de segmentados e um campo coringa p/ outras celulas nas contagens (verificar com Rafael)
 
 Criar um layout para mobile contendo apenas:
 - index
 - contador 
+- Neste layout mobile, o contador deve contar em % e ter a opção para converter para um valor absoluto mediante a contagem total de leucócitos
+- quando exportar do contador, travar os campos do diferencial no dadosHemograma.html
 
-contador deve contar em % e ter a opção para converter para um valor absoluto mediante a contagem total de leucócitos
+campo sugestividade clínica;
+    Geral;
+    Verificar flag;
+    Se houver determinada flag, inserir um texto em um campo
 
-quando exportar do contador, travar os campos do diferencial no dadosHemograma.html
+---- Parte escrita;
+Talvez mudar ordem conforme abaixo
+2.5 Software ---------------------------------------------------------------------------------(feito)
+2.5.1 Software de código aberto (open source); 
+2.5.2 Informática laboratorial ---------------------------------------------------------------(feito)
+2.5.3 Desenvolvimento
+    2.5.2.1 Linguagem html --------------------------------------------------------------------(feito)
+    2.5.2.2 CSS -------------------------------------------------------------------------------(feito)
+    2.5.2.3 Javascript
+    2.5.2.4 Navegadores??
+    2.5.2.5 Git e github (sistema e plataforma de controle de versão)
+2.6 Interdisciplinaridade
 
-arrumar botão do dadosPaciente.html para ficar posicionado à direita;
+3 Mudar no material e metodo as coisas para um TCC e não para pré projeto (tempo verbal)
+    3.1 ||
+    3.2 ||
+    3.3 ||
+    3.4 Metodologia -> modificar parte que indicava o uso da Linguagem python para HTML, CSS e Javascript
+
+4.0 Resultados e discussões
+    4.0.1 O software "Hemiso"
+            Falar sobre o nome, estilo, componentes, páginas (talvez postar prints)
+    4.0.2 Feedbacks
+
+5 Considerações Finais
+    Importância de um trabalho interdiscplinar;
+    Expor nesse momento as dificuldades encontradas na aprendizagem das linguagens e de lógica de programação;
+    Razões pela escolha da stack;
+    Possíveis melhorias e updates conforme feedbacks dos usuarios e ideias do desenvolvedor.
+
+
+
+
 
