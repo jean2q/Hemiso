@@ -15,16 +15,16 @@ campo sugestividade clínica;
 
 ---- Parte escrita;
 Talvez mudar ordem conforme abaixo
-2.5 Software ---------------------------------------------------------------------------------(feito)
+2.5 Software --------------------------------------------------------------------------------- (feito)
 2.5.1 Software de código aberto (open source); 
-2.5.2 Informática laboratorial ---------------------------------------------------------------(feito)
-2.5.3 Desenvolvimento
+2.5.2 Informática laboratorial  ---------------------------------------------------------------(feito)
+2.5.3 Desenvolvimento           ---------------------------------------------------------------(feito)
     2.5.2.1 Linguagem html --------------------------------------------------------------------(feito)
     2.5.2.2 CSS -------------------------------------------------------------------------------(feito)
     2.5.2.3 Javascript-------------------------------------------------------------------------(feito)
-    2.5.2.4 Navegadores                                                                         ??
-    2.5.2.5 Git e github (sistema e plataforma de controle de versão)                           ??
-2.6 Interdisciplinaridade
+    2.5.2.4 Navegadores------------------------------------------------------------------------(feito)                                                                         ??
+    2.5.2.5 Git e github (sistema e plataforma de controle de versão)
+2.6 Interdisciplinaridade ********************************************Aguardando indicação de material
 
 3 Mudar no material e metodo as coisas para um TCC e não para pré projeto (tempo verbal)-------(feito)
     3.1 ||-------------------------------------------------------------------------------------(feito)
@@ -45,6 +45,7 @@ Talvez mudar ordem conforme abaixo
 
 
 Corrigir e verificar formatação das referências e do sumário
+
 
 
 
