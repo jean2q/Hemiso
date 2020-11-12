@@ -16,14 +16,13 @@ campo sugestividade clínica;
 ---- Parte escrita;
 Talvez mudar ordem conforme abaixo
 2.5 Software --------------------------------------------------------------------------------- (feito)
-2.5.1 Software de código aberto (open source); 
 2.5.2 Informática laboratorial  ---------------------------------------------------------------(feito)
 2.5.3 Desenvolvimento           ---------------------------------------------------------------(feito)
     2.5.2.1 Linguagem html --------------------------------------------------------------------(feito)
     2.5.2.2 CSS -------------------------------------------------------------------------------(feito)
     2.5.2.3 Javascript-------------------------------------------------------------------------(feito)
     2.5.2.4 Navegadores------------------------------------------------------------------------(feito)                                                                         ??
-    2.5.2.5 Git e github (sistema e plataforma de controle de versão)
+    2.5.2.5 Git e github (sistema e plataforma de controle de versão)--------------------------(feito)
 2.6 Interdisciplinaridade ********************************************Aguardando indicação de material
 
 3 Mudar no material e metodo as coisas para um TCC e não para pré projeto (tempo verbal)-------(feito)
@@ -32,19 +31,26 @@ Talvez mudar ordem conforme abaixo
     3.3 ||-------------------------------------------------------------------------------------(feito)
     3.4 Metodologia -> modificar parte que indicava o uso de python para stack atual-----------(feito)
 
-4.0 Resultados e discussões
-    4.0.1 O software "Hemiso"
-            Falar sobre o nome, estilo, componentes, páginas (talvez postar prints)
-    4.0.2 Feedbacks
+4 Resultados e discussões
+    4.1 Documentação da aplicação---------(feito)
+    4.1.1 Nome da aplicação---------------(feito)
+    4.1.2 Descrição da interface----------(feito) TALVEZ ADICIONAR PRINTS?
+    4.1.3 Componentes principais----------(feito)
+    4.1.4 Descrição do produto------------(feito)
+    4.1.5 Público-alvo--------------------(feito)
+    4.1.6 Hierarquia de páginas-----------(feito)
+    4.1.7 Objetivos do produto------------(feito)
+    4.2 Expor dados dos feedbacks
 
-5 Considerações Finais
+5 Considerações finais
+
     Importância de um trabalho interdiscplinar;
     Expor nesse momento as dificuldades encontradas na aprendizagem das linguagens e de lógica de programação;
     Razões pela escolha da stack;
     Possíveis melhorias e updates conforme feedbacks dos usuarios e ideias do desenvolvedor.
 
 
-Corrigir e verificar formatação das referências e do sumário
+REFERÊNCIAS	41 Corrigir e verificar formatação das referências e do sumário
 
 
 
