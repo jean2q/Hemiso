@@ -2,11 +2,12 @@ arrumar botão do dadosPaciente.html para ficar posicionado à direita;
 
 Talvez adicionar opção de segmentados e um campo coringa p/ outras celulas nas contagens (verificar com Rafael)
 
-Criar um layout para mobile contendo apenas:
-- index
-- contador 
-- Neste layout mobile, o contador deve contar em % e ter a opção para converter para um valor absoluto mediante a contagem total de leucócitos
-- quando exportar do contador, travar os campos do diferencial no dadosHemograma.html
+alerta a cada 100 no count                 ----------------------------------------------------(feito)
+
+travar campos apos exportar dados do count ----------------------------------------------------(feito)
+talvez mudar a cor dos campos quando:
+travados e vazios
+travados e preenchidos
 
 campo sugestividade clínica;
     Geral;
@@ -43,7 +44,7 @@ Talvez mudar ordem conforme abaixo
     4.2 Expor dados dos feedbacks
 
 5 Considerações finais
-
+    
     Importância de um trabalho interdiscplinar;
     Expor nesse momento as dificuldades encontradas na aprendizagem das linguagens e de lógica de programação;
     Razões pela escolha da stack;

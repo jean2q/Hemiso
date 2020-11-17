@@ -1,18 +1,38 @@
-window.onload = function () {
-   function trataWBC(){
+   function trataWBC() {
       const campo = document.getElementById('leuc')
       campo.addEventListener('input', function () {
 
-         document.getElementById('mono').value = ((sessionStorage.getItem("monoPorcento")/100)*campo.value).toFixed(2)
-         document.getElementById('eosi').value = ((sessionStorage.getItem("eosiPorcento")/100)*campo.value).toFixed(2)
-         document.getElementById('linf').value = ((sessionStorage.getItem("linfPorcento")/100)*campo.value).toFixed(2)
-         document.getElementById('baso').value = ((sessionStorage.getItem("basoPorcento")/100)*campo.value).toFixed(2)
-         document.getElementById('neut').value = ((sessionStorage.getItem("neutPorcento")/100)*campo.value).toFixed(2)
-      
-     })
+         document.getElementById('mono').value = ((sessionStorage.getItem("monoPorcento") / 100) * campo.value).toFixed(2)
+         document.getElementById('eosi').value = ((sessionStorage.getItem("eosiPorcento") / 100) * campo.value).toFixed(2)
+         document.getElementById('linf').value = ((sessionStorage.getItem("linfPorcento") / 100) * campo.value).toFixed(2)
+         document.getElementById('baso').value = ((sessionStorage.getItem("basoPorcento") / 100) * campo.value).toFixed(2)
+         document.getElementById('neut').value = ((sessionStorage.getItem("neutPorcento") / 100) * campo.value).toFixed(2)
+
+      })
    }
 
    trataWBC()
+   
+   const locked = sessionStorage.getItem('locked')
+   lockCheck(locked)
+
+   function lockCheck(locked){
+      if (locked == "true"){
+         alert("Na série branca, preencha apenas o campo de contagem total de leucócitos, o restante será importado do diferencial.")
+         document.getElementById('mono').setAttribute("disabled", "disabled")
+         document.getElementById('eosi').setAttribute("disabled", "disabled")
+         document.getElementById('linf').setAttribute("disabled", "disabled")
+         document.getElementById('baso').setAttribute("disabled", "disabled")
+         document.getElementById('neut').setAttribute("disabled", "disabled")
+      }
+      else{
+         document.getElementById('mono').setAttribute("enabled", "enabled")
+         document.getElementById('eosi').setAttribute("enabled", "enabled")
+         document.getElementById('linf').setAttribute("enabled", "enabled")
+         document.getElementById('baso').setAttribute("enabled", "enabled")
+         document.getElementById('neut').setAttribute("enabled", "enabled")
+      }
+   }
 
    var form = document.getElementById('laudo');
 
@@ -37,11 +57,11 @@ window.onload = function () {
          }
       }
 
-      // impede o envio do form
+      sessionStorage.setItem("locked", false)//desbloqueia os campos apos geração do laudo
 
       e.preventDefault();
 
       location.href = "./laudoFinal.html"
 
    });
-}
+

@@ -17,6 +17,7 @@ function counter(wbc) {
         campoPorCento.innerHTML = ((campoContador.innerHTML / campoTotal.innerHTML) * 100).toFixed(2) //atualiza, a cada click, o valor da % correspondente do campo
 
         atualizaValores() //Chama a função para atualizar os valores em % dos outros campos, a cada click.
+        alertCem()
 
     })
 
@@ -30,6 +31,7 @@ function counter(wbc) {
         }
 
         atualizaValores() //Chama a função para atualizar os valores em % dos outros campos, a cada click.
+        alertCem()
     })
 
     function atualizaValores() {
@@ -98,7 +100,16 @@ exporta.addEventListener('click', function () {
     sessionStorage.setItem("eosiPorcento", document.getElementById('eosiPorcento').innerHTML)
     sessionStorage.setItem("neutPorcento", document.getElementById('neutPorcento').innerHTML)
     sessionStorage.setItem("basoPorcento", document.getElementById('basoPorcento').innerHTML)
-
+    sessionStorage.setItem("locked", true) //trava campos na contagem
 
     location.href = "./dadosPaciente.html"
 })
+
+function alertCem(){
+    console.log('teste')
+    let campoTotal = document.getElementById('total').innerHTML
+
+    if (campoTotal % 100 == 0){
+        alert('Você já contou '+campoTotal+' células.')
+    }
+}
