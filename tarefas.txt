@@ -9,10 +9,16 @@ talvez mudar a cor dos campos quando:
 travados e vazios
 travados e preenchidos
 
+verificar as contas, talvez não esteja correto
+verificar se é realmente o CHCM para classificar hipocromia------------------------------------(feito)
+
 campo sugestividade clínica;
-    Geral;
-    Verificar flag;
+    Criar campo no laudo;----------------------------------------------------------------------(feito)
+    Verificar se houve flag;
     Se houver determinada flag, inserir um texto em um campo
+    série vermelha ----------------------------------------------------------------------------(feito)
+    série branca
+    plaquetas
 
 ---- Parte escrita;
 Talvez mudar ordem conforme abaixo

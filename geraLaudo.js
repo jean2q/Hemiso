@@ -325,34 +325,50 @@
 
     if (dados.hb < valorRef.refHb.min) //Verifica se há anemia
     {
-        anemia.status = " ↓ anemia";
-
+        anemia.status = " ↓ anemia ";
+        
         if (dados.VCM < valorRef.refVCM.min) //Verifica a classificação de acordo com o tamanho das celulas
         {
-            anemia.tamanho = " ↓ microcítica"
+            anemia.tamanho = " ↓ microcítica "
         }
         else if (dados.VCM > valorRef.refVCM.max)
         {
-            anemia.tamanho = " ↑ macrocítica"
+            anemia.tamanho = " ↑ macrocítica "
         }
         else if (dados.VCM > valorRef.refVCM.min && dados.VCM < valorRef.refVCM.max)
         {
             anemia.tamanho = " normocítica "
         }
-
+        
         if (dados.HCM < valorRef.refHCM.min) //Verifica a classificação de acordo com a cor das celulas
         {
-            anemia.cor = " ↓ hipocrômica"
+            anemia.cor = " hipocrômica "
         }
         else if (dados.HCM > valorRef.refHCM.min && dados.HCM < valorRef.refHCM.max)
         {
             anemia.cor = " normocrômica "
         }
-
+        
     }
+    
+    classificaAnemia()
 
-    console.log(anemia)
-
+    function classificaAnemia(){
+        const sugest = document.getElementById("sugestao_clinica")
+        if (anemia.status != null){
+            if (anemia.tamanho.indexOf("microcítica") >= 0 && anemia.cor.indexOf("hipocrômica") >= 0){
+                sugest.innerText = ("Investigar possibilidade de anemia ferropriva, intoxicação por chumbo ou anemia sideroblástica.")
+            }
+            else if (anemia.tamanho.indexOf("Normocítica") >= 0 && anemia.cor.indexOf("normocrômica") >= 0)
+            {
+                sugest.innerText = ("Possível anemia hemolítica, paciente em condição pós hemorragia ou nefropatias.")
+            }
+            else if (anemia.tamanho.indexOf("Macrocítica"))
+            {
+                sugest.innerText = ("Investigar anemia megaloblástica, abuso de álcool e hepatopatias.")
+            }
+        }
+    }
 
     //Cria um objeto contendo informações sobre a série branca
     var serieBranca = {
@@ -392,10 +408,10 @@
     }
     
     if (dados.baso > valorRef.refBaso.max){
-        serieBranca.baso = " ↑ basofilia"
+        serieBranca.baso = " ↑ basofilia "
     }
     else if (dados.baso < valorRef.refBaso.min){
-        serieBranca.baso = " ↓ basopenia"
+        serieBranca.baso = " ↓ basopenia "
     }
     
     console.log(serieBranca)
@@ -426,3 +442,4 @@
     
     preencherFlags(anemia, 'hem_obs')
     preencherFlags(serieBranca, 'leuc_obs')
+
