@@ -38,9 +38,9 @@
 
    form.addEventListener('submit', function (e) {
       //Calcula Índices Hematimétricos
-      let VCM = ((ht.value / hem_cont.value) * 10).toFixed(2)
-      let HCM = ((hb.value / hem_cont.value) * 10).toFixed(2)
-      let CHCM = ((hb.value / ht.value) * 100).toFixed(2)
+      let VCM = ((ht.value * 10 / hem_cont.value) ).toFixed(2)
+      let HCM = ((hb.value * 10 / hem_cont.value) ).toFixed(2)
+      let CHCM = ((hb.value  * 100 / ht.value) ).toFixed(2)
 
       //Salva Valores no sessionstorage dos índices hematimétricos
       sessionStorage.setItem("VCM", VCM)

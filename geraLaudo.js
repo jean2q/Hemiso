@@ -1,6 +1,6 @@
-     console.log('teste')
-    
+
     var dados = window.sessionStorage
+    const sugest = document.getElementById("sugestao_clinica")
 
     //DADOS PACIENTE
 
@@ -118,7 +118,7 @@
             refHt: {min: 40, max: 50},
             refVCM: {min: 83, max: 101},
             refHCM: {min: 27, max: 32},
-            refCHCM: {min: 39.5, max: 46},
+            refCHCM: {min: 31.5, max: 34.6},
             refLeuc: {min: 4, max: 10},
             refNeut: {min: 2, max: 7},
             refLinf: {min: 1, max: 3},
@@ -138,7 +138,7 @@
             refHt: {min: 36, max: 46},
             refVCM: {min: 83, max: 101},
             refHCM: {min: 27, max: 32},
-            refCHCM: {min: 39.5, max: 46},
+            refCHCM: {min: 31.5, max: 34.6},
             refLeuc: {min: 4, max: 10},
             refNeut: {min: 2, max: 7},
             refLinf: {min: 1, max: 3},
@@ -354,19 +354,21 @@
     classificaAnemia()
 
     function classificaAnemia(){
-        const sugest = document.getElementById("sugestao_clinica")
         if (anemia.status != null){
             if (anemia.tamanho.indexOf("microcítica") >= 0 && anemia.cor.indexOf("hipocrômica") >= 0){
-                sugest.innerText = ("Investigar possibilidade de anemia ferropriva, intoxicação por chumbo ou anemia sideroblástica.")
+                sugest.innerText = ("Investigar possibilidade de anemia ferropriva, intoxicação por chumbo ou anemia sideroblástica. ")
             }
             else if (anemia.tamanho.indexOf("Normocítica") >= 0 && anemia.cor.indexOf("normocrômica") >= 0)
             {
-                sugest.innerText = ("Possível anemia hemolítica, paciente em condição pós hemorragia ou nefropatias.")
+                sugest.innerText = ("Possível anemia hemolítica, paciente em condição pós hemorragia ou nefropatias. ")
             }
             else if (anemia.tamanho.indexOf("Macrocítica"))
             {
-                sugest.innerText = ("Investigar anemia megaloblástica, abuso de álcool e hepatopatias.")
+                sugest.innerText = ("Investigar anemia megaloblástica, abuso de álcool e hepatopatias. ")
             }
+        }
+        else{
+            sugest.innerText = ("Sem evidência de anemia. ")
         }
     }
 
@@ -374,56 +376,79 @@
     var serieBranca = {
         leuc:null,
         linf:null,
+        neut:null,
         mono:null,
         eosi:null,
         baso:null,
     }
 
+
+
     if (dados.leuc > valorRef.refLeuc.max){
         serieBranca.leuc = "↑ leucocitose  "
+        //Sem significado clínico de forma isolada
     }
     else if (dados.leuc < valorRef.refLeuc.min){
         serieBranca.leuc = "↓ leucopenia  "
+        //Sem significado clínico de forma isolada
     }
 
     if (dados.linf > valorRef.refLinf.max){
         serieBranca.linf = "↑ linfocitose "
+        sugest.innerText += " Linfocitose, sugestivo de infecção viral, investigar também neoplasias de linfopoese. "
     }
     else if (dados.linf < valorRef.refLinf.min){
         serieBranca.linf = "↓ linfopenia  "
+        sugest.innerText += " Linfocitopenia, investigar doenças e fármacos imunossupressores, doença de Hodgkin e Lupus. "
     }
 
     if (dados.mono > valorRef.refMono.max){
         serieBranca.mono = "↑ monocitose "
+        sugest.innerText += " Monocitose, investigar endocardite subaguda, tuberculose e brucelse, se persistente em idosos pode indicar leucemia mielomonocítica crônica. "
     }
     else if (dados.mono < valorRef.refMono.min){
         serieBranca.mono = "↓ monocitopenia "
+        //Achado pouco incomum com pouca relevância clínica conforme Faillace cap 17 pg 270
     }
     
     if (dados.eosi > valorRef.refEosi.max){
         serieBranca.eosi = " ↑ eosinofilia "
+        sugest.innerText += " Eosinofilia, processo alérgico ou parasitário. " 
     }
     else if (dados.eosi < valorRef.refEosi.min){
         serieBranca.eosi = " ↓ eosinopenia "
+        //Sem significado clínico conforme Faillace cap 17 pg 270
     }
     
     if (dados.baso > valorRef.refBaso.max){
         serieBranca.baso = " ↑ basofilia "
+        //Sem significado clínico conforme Faillace cap 17 pg 270
     }
     else if (dados.baso < valorRef.refBaso.min){
         serieBranca.baso = " ↓ basopenia "
+        //Sem significado clínico conforme Faillace cap 17 pg 270
+
+        
     }
-    
-    console.log(serieBranca)
+    if (dados.neut > valorRef.refNeut.max){
+        serieBranca.baso = " ↑ neutrofilia "
+        sugest.innerText += " Neutrofilia, processo infeccioso ou inflamatório instaurado, outras causas possíveis: trauma, neoplasias, uso de corticoides ou intoxicações endógenas. "
+    }
+    else if (dados.neut < valorRef.refNeut.min){
+        serieBranca.neut = " ↓ neutropenia "
+        sugest.innerText += " Neutropenia, investigar uso de medicamentos quimioterápicos e doenças que danificam a medula óssea (hemopatias leucêmicas). "
+    }
 
     //Preenche flags plaquetograma
     var plaquetograma = null
 
     if (dados.plac_cont > valorRef.refPlaq.max){
         plaquetograma = " ↑ trombocitose "
+        sugest.innerText += " Trombocitose, fenômeno reacional, não representa em si uma doença hematologica, comum nos primeiros anos de vida, na anemia ferropênica e nas doenças inflamatórias crônicas, bem como em períodos pós-hemorrágicos. "
     }
     else if (dados.plac_cont < valorRef.refPlaq.min){
         plaquetograma = " ↓ trombocitopenia "
+        sugest.innerText += " Trombocitopenia, possível consequência de quimioterapia e radioterapia, doenças infeccioasas graves, esplenomegalia e viroses febris. " 
     }
 
     if (plaquetograma != null){

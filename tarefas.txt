@@ -1,27 +1,27 @@
-arrumar botão do dadosPaciente.html para ficar posicionado à direita;
+arrumar botão do dadosPaciente.html para ficar posicionado à direita; ************* Futuras versões
 
-Talvez adicionar opção de segmentados e um campo coringa p/ outras celulas nas contagens (verificar com Rafael)
+Talvez adicionar opção de segmentados e um campo coringa p/ outras celulas nas contagens (verificar com Rafael) ************* Futuras versões
 
 alerta a cada 100 no count                 ----------------------------------------------------(feito)
 
 travar campos apos exportar dados do count ----------------------------------------------------(feito)
-talvez mudar a cor dos campos quando:
-travados e vazios
-travados e preenchidos
+talvez mudar a cor dos campos quando: ************* Futuras versões
+travados e vazios                      ************* Futuras versões
+travados e preenchidos                  ************* Futuras versões
 
-verificar as contas, talvez não esteja correto
+verificar as contas, talvez não esteja correto-------------------------------------------------(feito)
 verificar se é realmente o CHCM para classificar hipocromia------------------------------------(feito)
 
-campo sugestividade clínica;
+campo sugestividade clínica;-------------------------------------------------------------------(feito)
     Criar campo no laudo;----------------------------------------------------------------------(feito)
-    Verificar se houve flag;
-    Se houver determinada flag, inserir um texto em um campo
+    Verificar se houve flag; ------------------------------------------------------------------(feito)
+    Se houver determinada flag, inserir um texto em um campo ----------------------------------(feito)
     série vermelha ----------------------------------------------------------------------------(feito)
-    série branca
-    plaquetas
+    série branca ------------------------------------------------------------------------------(feito)
+    plaquetas ---------------------------------------------------------------------------------(feito)
 
 ---- Parte escrita;
-Talvez mudar ordem conforme abaixo
+Talvez mudar ordem conforme abaixo-------------------------------------------------------------(feito)
 2.5 Software --------------------------------------------------------------------------------- (feito)
 2.5.2 Informática laboratorial  ---------------------------------------------------------------(feito)
 2.5.3 Desenvolvimento           ---------------------------------------------------------------(feito)
@@ -41,7 +41,8 @@ Talvez mudar ordem conforme abaixo
 4 Resultados e discussões
     4.1 Documentação da aplicação---------(feito)
     4.1.1 Nome da aplicação---------------(feito)
-    4.1.2 Descrição da interface----------(feito) TALVEZ ADICIONAR PRINTS?
+    4.1.2 Descrição da interface----------(feito) 
+    TALVEZ ADICIONAR PRINTS? -------------(feito) 
     4.1.3 Componentes principais----------(feito)
     4.1.4 Descrição do produto------------(feito)
     4.1.5 Público-alvo--------------------(feito)
@@ -55,6 +56,13 @@ Talvez mudar ordem conforme abaixo
     Expor nesse momento as dificuldades encontradas na aprendizagem das linguagens e de lógica de programação;
     Razões pela escolha da stack;
     Possíveis melhorias e updates conforme feedbacks dos usuarios e ideias do desenvolvedor.
+
+
+
+RESUMO
+ABSTRACT
+EPÍGRAFE
+AGRADECIMENTOS
 
 
 REFERÊNCIAS	41 Corrigir e verificar formatação das referências e do sumário
