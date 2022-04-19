@@ -3,9 +3,13 @@
 Software desenvolvido como TCC do curso de Bacharel em Farmácia da Uniguaçu.
 Disponível em: https://drive.google.com/file/d/1DBSLQEg16CPugid3ukrx4Pfz82fKxyvy/view?usp=sharing
 
+- Tela inicial.
 ![image](https://user-images.githubusercontent.com/60346994/164078119-a56e99a8-9f5d-415a-b7f2-f33d4e88d35f.png)
+- Tela para contagem diferencial de leucócitos.
 ![image](https://user-images.githubusercontent.com/60346994/164078149-21eff195-fb9c-4c06-a439-3e00444d0a8e.png)
+- Tela para preenchimento dos dados do paciente.
 ![image](https://user-images.githubusercontent.com/60346994/164078201-69d867fa-195c-4998-abdb-31d0a79771b0.png)
+- Tela para preenchimento de dados do exame
 ![image](https://user-images.githubusercontent.com/60346994/164078247-b272ef9d-8be0-4dee-83e1-6a0c968f5217.png)
 
 
