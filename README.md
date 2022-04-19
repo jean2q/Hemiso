@@ -15,11 +15,14 @@ Disponível em: https://drive.google.com/file/d/1DBSLQEg16CPugid3ukrx4Pfz82fKxyv
 
 Exemplos de laudos
 – Laudo contendo dados do paciente.
+
 ![image](https://user-images.githubusercontent.com/60346994/164078469-eab547b0-e5b9-42fb-9d20-7bc9ed792d67.png)
 
 
 - Laudo contendo dados da série vermelha e branca.
+
 ![image](https://user-images.githubusercontent.com/60346994/164078579-320c64d5-22ca-4775-8e0a-ac8f9ac1c83f.png)
 
 - Laudo cotendo o plaquetograma e também a sugestão clínica.
+
 ![image](https://user-images.githubusercontent.com/60346994/164078694-cf0676bc-692e-40a3-9891-ef4cb45ab8bb.png)
